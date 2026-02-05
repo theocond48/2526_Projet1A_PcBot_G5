@@ -49,13 +49,3 @@ A faire à chaque fois qu'on commence à travailler.
 ```bash
 git pull
 ```
-### Suite du travail
-
-```bash
- void main();
-    funct();
-    return funct()
-    test
-    test 
-    test
-```
