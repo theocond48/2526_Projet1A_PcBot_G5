@@ -46,6 +46,10 @@ git push    # Pousse les modifications
 
 A faire à chaque fois qu'on commence à travailler.
 
-```bash
-git pull
+```bash``
+git pull``
 ```
+Salut à tous la team ! 
+
+
+
