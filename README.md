@@ -73,9 +73,9 @@ git pull
 # 1 - Liste des fonctionnalités
 Le robot doit être capable de:
 - **Navigation et Évitement d'obstacles :** Détection d'objets en temps réel via les capteurs **VL53L0X (TOF)** pour ajuster la trajectoire.
-- **Localisation Relative (Odométrie) :** Suivi du déplacement et de l'orientation grâce à la centrale inertielle **LSM6DSOX** (Accéléromètre/Gyroscope).
+- **Localisation Relative:** Suivi du déplacement et de l'orientation grâce à la centrale inertielle **LSM6DSOX** (Accéléromètre/Gyroscope).
 - **Cartographie Collaborative :** Envoi des points de données de l'environnement vers les autres robots ou une station de base via le module **nRF24**.
-- **Gestion de Flotte (Swarm) :** Capacité à recevoir des instructions ou à partager sa position pour éviter que deux robots ne couvrent la même zone.
+- **Gestion de Swarm :** Capacité à recevoir des instructions ou à partager sa position pour éviter que deux robots ne couvrent la même zone.
 - **Pilotage de Puissance :** Contrôle précis de la vitesse et de la direction des micro-moteurs **DFR1224** via le driver **DRV8411A**.
 - **Autonomie Énergétique :** Recharge sécurisée de la batterie Li-ion et monitoring de la tension via le contrôleur **BQ25896**.
 
@@ -89,7 +89,7 @@ graph TD
     %% Alimentation
     subgraph Power_System [Gestion Énergie]
         BAT[Batterie Li-ion] --- BMS[BMS: BQ25896]
-        BMS --> MCU[Microcontrôleur central]
+        BMS --> MCU[STM32L476]
     end
 
     %% Capteurs
@@ -125,8 +125,8 @@ graph TD
   - Formation du groupe.
   - Création du dépôt Git et ajout du professeur (laurent.fiack@ensea.fr).
   - Étude des composants : Capteurs TOF, Accéléromètre, nRF24, Batterie/Chargeur.
-- **Séance 2 : Saisie de schéma (Partie 1)**
-  - Début de la saisie CAO des blocs d'alimentation et du microcontrôleur.
+- **Séance 2 : Saisie de schéma**
+  - Début de la saisie sur KiCad des blocs d'alimentation et du microcontrôleur.
 - **Séance 3 : Revue de schéma & Finalisation**
   - Revue critique des connexions.
   - Finalisation du schéma complet avant les vacances de février.
@@ -134,7 +134,7 @@ graph TD
 ## Phase 2 : Routage et Fabrication (Deadline Stricte)
 - **Séance 4 : Placement et Routage**
   - Placement des composants sur le PCB.
-  - Routage des pistes (puissance et signaux critiques).
+  - Routage des pistes.
 - **Séance 5 : Revue de routage & Commande**
   - **Jalon critique :** Validation finale du routage.
   - Génération et envoi des fichiers de fabrication (Gerber).
@@ -143,7 +143,7 @@ graph TD
 - **Séance 6 : Tests préliminaires & Firmware**
   - Tests sur cartes de développement.
   - Développement des drivers pour les capteurs TOF et le module nRF24.
-- **Séance 7 : Développement Firmware (Avancé)**
+- **Séance 7 : Développement Firmware**
   - Implémentation des algorithmes de cartographie et de communication Swarm.
 - **Séance 8 : Firmware & Soudure**
   - Réception possible des PCB.
@@ -162,3 +162,55 @@ graph TD
 
 
 
+graph TD
+    %% Processeur Central
+    STM[STM32L4 Microcontroller]
+
+    %% Section Energie
+    subgraph Power [GESTION ÉNERGIE]
+        BMS[BMS: BQ25896]
+        BAT((Batterie Li-ion))
+    end
+
+    %% Section Perception
+    subgraph Sensors [PERCEPTION]
+        TOF[Télémètre: VL53L0X]
+        IMU[Centrale Inertielle: LSM6DSOX]
+    end
+
+    %% Section Comms
+    subgraph Comms [COMMUNICATION]
+        NRF[Radio: nRF24L01+]
+    end
+
+    %% Section Propulsion
+    subgraph Drive [PROPULSION]
+        DRV[Driver: DRV8411]
+        M1(Moteur G: DFR1224)
+        M2(Moteur D: DFR1224)
+    end
+
+    %% Connexions avec identification des BUS
+    BAT --- BMS
+    BMS -- "Bus I2C (Adresse 0x6B)" --> STM
+    TOF -- "Bus I2C (Adresse 0x52)" --> STM
+    IMU -- "Bus I2C (Adresse 0x6A)" --> STM
+    
+    NRF -- "Bus SPI (Fast Data)" --> STM
+    
+    STM -- "Signaux PWM (Timers)" --> DRV
+    DRV -- "Phase A/B" --> M1
+    DRV -- "Phase A/B" --> M2
+
+    %% Styles de visibilité
+    classDef mcu fill:#e63946,stroke:#333,stroke-width:2px,color:#fff;
+    classDef pwr fill:#a8dadc,stroke:#457b9d,stroke-width:2px;
+    classDef sns fill:#f1faee,stroke:#1d3557,stroke-width:2px;
+    classDef rad fill:#457b9d,stroke:#1d3557,stroke-width:2px,color:#fff;
+    classDef mot fill:#f4a261,stroke:#e76f51,stroke-width:2px;
+
+    class STM mcu;
+    class BMS,BAT pwr;
+    class TOF,IMU sns;
+    class NRF rad;
+    class DRV,M1,M2 mot;
