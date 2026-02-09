@@ -31,7 +31,7 @@ Le robot doit être capable de:
 
 ## BMS bq25896
 
-![](/image/image_bms.png)
+![](Image/image_bms.png)
 
 - **C'est quoi ?** Le gestionnaire d'énergie intelligent.
     
@@ -47,15 +47,15 @@ Le robot doit être capable de:
 
 ### Pin configuration BMS :
 
-![](/image/image_pin_configuration_bms.png)
+![](Image/image_pin_configuration_bms.png)
 
 **Netlist:**
-![](/image/pin_details_bms.png)
-![](/image/pin_details_bms_2.png)
+![](Image/image/pin_details_bms.png)
+![](Image/image/pin_details_bms_2.png)
 
 ## Motor's Driver DRV8411A 
 
-![](/image/image_driver.png)
+![](Image/image/image_driver.png)
 
 - **C'est quoi ?** L'amplificateur de puissance.
     
@@ -64,9 +64,9 @@ Le robot doit être capable de:
 - **Pourquoi c'est vital ?** Il protège le STM32 des retours de courant inductif des moteurs.
 ### Pin configuration Driver
 
-![](/image/image_pin_configuration_drv.png)
+![](Image/image/image_pin_configuration_drv.png)
 
-![](/image/pin_details_drv.png)
+![](Image/image/pin_details_drv.png)
 
 ## imu adafruit (centrale inertielle)
 
@@ -113,7 +113,7 @@ VL53L0X (ToF - Time of Flight)
     
 
 ## module de communication nRF24l01
-![image nrf](/image/image_nrf24.png)
+![image nrf](Image/image_nrf24.png)
 
 ### Pin configuration nrf
 ![pin nrf](Image/image_pin_configuration_nrf.png)
