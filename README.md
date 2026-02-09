@@ -118,7 +118,7 @@ graph TD
 
 Afin d'assurer les connexions données, on se reposera sur la Datasheet qui nous donne l'ensembles des ports de la STM32L476 qui sont configurés en I2C et SPI:
 
-![Tableau des fonctions alternées STM32](images/Datasheet I2C,SPI.png)
+![Tableau des fonctions alternées STM32](Images/datasheet_i2c_spi.png)
 
 
 # 3 - Planning Prévisionnel - Projet PCBot
