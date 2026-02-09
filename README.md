@@ -89,7 +89,7 @@ graph TD
     %% Alimentation
     subgraph Power_System [Gestion Énergie]
         BAT[Batterie Li-ion] --- BMS[BMS: BQ25896]
-        BMS --> MCU[STM32L476]
+        BMS -- I2C --> MCU[STM32L476]
     end
 
     %% Capteurs
