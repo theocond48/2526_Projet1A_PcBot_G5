@@ -116,6 +116,9 @@ graph TD
     style nRF fill:#ddf
 ```
 
+Afin d'assurer les connexions données, on se reposera sur la Datasheet qui nous donne l'ensembles des ports de la STM32L476 qui sont configurés en I2C et SPI:
+
+![Tableau des fonctions alternées STM32](images/Datasheet I2C,SPI.png)
 
 
 # 3 - Planning Prévisionnel - Projet PCBot
@@ -136,7 +139,7 @@ graph TD
   - Placement des composants sur le PCB.
   - Routage des pistes.
 - **Séance 5 : Revue de routage & Commande**
-  - **Jalon critique :** Validation finale du routage.
+  - **Critique :** Validation finale du routage.
   - Génération et envoi des fichiers de fabrication (Gerber).
 
 ## Phase 3 : Firmware et Intégration
