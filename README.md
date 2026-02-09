@@ -1,57 +1,5 @@
 # 2526_Projet1A_PcBot_G5
 
-## Rappels Git
-
-### Clé SSH
-
-Créer une clé :
-
-```bash
-ssh-keygen
-```
-
-Afficher la clé ssh
-
-```bash
-cat /c/Users/<USER>/.ssh/id_ed25519.pub
-```
-
-### Cloner un projet
-
-Clonage = récupérer le projet. A faire une fois par projet. 
-
-```bash
-cd <chemin/vers/le/bon/dossier>
-git clone git@github.com:theocond48/2526_Projet1A_PcBot_G5.git
-```
-
-### Voir l'état du projet
-
-```bash
-git status
-```
-
-### Pousser des modifications 
-
-On dit "committer" ou "faire un commit".
-A faire à chaque fois qu'on a une nouvelle version fonctionnelle.
-
-```bash
-git add .   # Ajoute tous les fichiers
-git commit -m "Message"
-git push    # Pousse les modifications
-```
-
-### Récupérer les dernières mises à jour
-
-A faire à chaque fois qu'on commence à travailler.
-
-```bash
-git pull
-```
-
-# Projet PCBot:
-
 **Objectif :** Concevoir un robot communicant (Swarm) pour la cartographie d'environnement.
 **Volume horaire :** 40 heures (10 séances x 4h).
 
@@ -173,7 +121,7 @@ graph TD
     %% Alimentation
     subgraph Power_System [Gestion Énergie]
         BAT[Batterie Li-ion] --- BMS[BMS: BQ25896]
-        BMS --> MCU[STM32L476]
+        BMS -- I2C --> MCU[STM32L476]
     end
 
     %% Capteurs
@@ -200,6 +148,9 @@ graph TD
     style nRF fill:#ddf
 ```
 
+Afin d'assurer les connexions données, on se reposera sur la Datasheet qui nous donne l'ensembles des ports de la STM32L476 qui sont configurés en I2C et SPI:
+
+![Tableau des fonctions alternées STM32](Images/datasheet_i2c_spi.png)
 
 
 # 3 - Planning Prévisionnel - Projet PCBot
@@ -220,7 +171,7 @@ graph TD
   - Placement des composants sur le PCB.
   - Routage des pistes.
 - **Séance 5 : Revue de routage & Commande**
-  - **Jalon critique :** Validation finale du routage.
+  - **Critique :** Validation finale du routage.
   - Génération et envoi des fichiers de fabrication (Gerber).
 
 ## Phase 3 : Firmware et Intégration
