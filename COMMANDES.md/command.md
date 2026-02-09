@@ -47,3 +47,24 @@ A faire à chaque fois qu'on commence à travailler.
 ```bash
 git pull
 ```
+
+### Créer un fichier sur git ou un dossier
+
+```bash
+# Sur Mac ou Linux (ou terminal Git Bash) Pour un fichier :
+touch nom.md
+
+# Pour un dossier
+mkdir nom
+```
+
+### Changer de branche
+
+```bash
+git checkout nom-de-la-branche
+```
+
+### Créer une branche
+
+```bash
+
