@@ -31,7 +31,7 @@ Le robot doit être capable de:
 
 ## BMS bq25896
 
-![](Image/image_bms.png)
+![](image/image_bms.png)
 
 - **C'est quoi ?** Le gestionnaire d'énergie intelligent.
     
@@ -47,15 +47,15 @@ Le robot doit être capable de:
 
 ### Pin configuration BMS :
 
-![](Image/image_pin_configuration_bms.png)
+![](image/image_pin_configuration_bms.png)
 
 **Netlist:**
-![](Image/image/pin_details_bms.png)
-![](Image/image/pin_details_bms_2.png)
+![](image/image/pin_details_bms.png)
+![](image/image/pin_details_bms_2.png)
 
 ## Motor's Driver DRV8411A 
 
-![](Image/image/image_driver.png)
+![](image/image/image_driver.png)
 
 - **C'est quoi ?** L'amplificateur de puissance.
     
@@ -64,13 +64,13 @@ Le robot doit être capable de:
 - **Pourquoi c'est vital ?** Il protège le STM32 des retours de courant inductif des moteurs.
 ### Pin configuration Driver
 
-![](Image/image/image_pin_configuration_drv.png)
+![](image/image/image_pin_configuration_drv.png)
 
-![](Image/image/pin_details_drv.png)
+![](image/image/pin_details_drv.png)
 
 ## imu adafruit (centrale inertielle)
 
-![](Image/image_lsm6d0x.png)
+![](image/image_lsm6d0x.png)
  LSM6DSOX (IMU - Accéléromètre/Gyroscope)
 
 - **C'est quoi ?** Le capteur d'équilibre et de mouvement.
@@ -79,13 +79,13 @@ Le robot doit être capable de:
     
 ### Pin configuration imu
 
-![](Image/image_pin_configuration_imu.png)
+![](image/image_pin_configuration_imu.png)
 
-![](Image/pin_details_imu.png)
+![](image/pin_details_imu.png)
 
 ## Tof vl53lx
 
-![image capteur](Image/image_capteur_tof.png)
+![image capteur](image/image_capteur_tof.png)
 VL53L0X (ToF - Time of Flight)
 
 - **C'est quoi ?** Le télémètre laser.
@@ -93,7 +93,7 @@ VL53L0X (ToF - Time of Flight)
 - **Sa mission :** Il envoie un rayon de lumière invisible (infrarouge) et mesure le temps qu'il met à revenir. Cela lui donne la distance précise de l'obstacle devant lui (en millimètres).
 
 ### Pin configuration tof
-![pin capteur](Image/image_pin_configuration_tof.png)
+![pin capteur](image/image_pin_configuration_tof.png)
 VL53L0X (ToF - Time of Flight)
 
 - **C'est quoi ?** Le télémètre laser.
@@ -103,7 +103,7 @@ VL53L0X (ToF - Time of Flight)
 
 ## motor DFR1224
 (Moteurs N20 3V)
-![](Image/image_nrf24.png)
+![](image/image_nrf24.png)
 
 - **C'est quoi ?** Les actionneurs.
     
@@ -113,10 +113,10 @@ VL53L0X (ToF - Time of Flight)
     
 
 ## module de communication nRF24l01
-![image nrf](Image/image_nrf24.png)
+![image nrf](image/image_nrf24.png)
 
 ### Pin configuration nrf
-![pin nrf](Image/image_pin_configuration_nrf.png)
+![pin nrf](image/image_pin_configuration_nrf.png)
 
 
 
