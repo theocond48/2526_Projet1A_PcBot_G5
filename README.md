@@ -78,6 +78,90 @@ Le robot doit être capable de:
 - **Gestion de Swarm :** Capacité à recevoir des instructions ou à partager sa position pour éviter que deux robots ne couvrent la même zone.
 - **Pilotage de Puissance :** Contrôle précis de la vitesse et de la direction des micro-moteurs **DFR1224** via le driver **DRV8411A**.
 - **Autonomie Énergétique :** Recharge sécurisée de la batterie Li-ion et monitoring de la tension via le contrôleur **BQ25896**.
+## 1.2 -Détails des composants 
+
+## BMS bq25896
+
+![[image_bms.png]]
+
+- **C'est quoi ?** Le gestionnaire d'énergie intelligent.
+    
+- **Sa mission :**
+    
+    1. Il prend le 5V de l'USB pour charger la batterie LiPo en toute sécurité.
+        
+    2. Il protège la batterie (surcharge/décharge profonde).
+        
+    3. Il fournit l'énergie principale (SYS) au reste du robot.
+        
+- **Pourquoi c'est vital ?** Sans lui, ta batterie LiPo pourrait prendre feu ou mourir prématurément.
+
+### Pin configuration BMS :
+![[image_pin_configuration_bms.png]]
+**Netlist:**
+![[pin_details_bms.png]]
+![[pin_details_bms_2.png]]
+
+## Motor's Driver DRV8411A 
+
+![[image_driver.png]]
+
+- **C'est quoi ?** L'amplificateur de puissance.
+    
+- **Sa mission :** Le STM32 est trop faible pour faire tourner les moteurs directement. Le DRV8411A prend les petits ordres logiques (3.3V) et ouvre les vannes du "gros courant" venant de la batterie pour faire tourner les roues.
+    
+- **Pourquoi c'est vital ?** Il protège le STM32 des retours de courant inductif des moteurs.
+### Pin configuration Driver
+![[image_pin_configuration_drv.png]]
+![[pin_details_drv.png]]
+
+## imu adafruit (centrale inertielle)
+
+![[image_lsm6d0x.png]]
+ LSM6DSOX (IMU - Accéléromètre/Gyroscope)
+
+- **C'est quoi ?** Le capteur d'équilibre et de mouvement.
+    
+- **Sa mission :** Il sent si le robot accélère, tourne, ou s'il cogne un mur (choc). Il permet de faire avancer le robot bien droit (en corrigeant la trajectoire si une roue tourne plus vite que l'autre).
+    
+### Pin configuration imu
+![[image_pin_configuration_imu.png]]
+
+## Tof vl53lx
+![[image_capteur_tof.png]]
+VL53L0X (ToF - Time of Flight)
+
+- **C'est quoi ?** Le télémètre laser.
+    
+- **Sa mission :** Il envoie un rayon de lumière invisible (infrarouge) et mesure le temps qu'il met à revenir. Cela lui donne la distance précise de l'obstacle devant lui (en millimètres).
+
+### Pin configuration tof
+![[image_pin_configuration_tof]]
+VL53L0X (ToF - Time of Flight)
+
+- **C'est quoi ?** Le télémètre laser.
+    
+- **Sa mission :** Il envoie un rayon de lumière invisible (infrarouge) et mesure le temps qu'il met à revenir. Cela lui donne la distance précise de l'obstacle devant lui (en millimètres).
+
+
+## motor DFR1224
+(Moteurs N20 3V)
+![[image_nrf24.png]]
+
+- **C'est quoi ?** Les actionneurs.
+    
+- **Sa mission :** Convertir l'électricité en mouvement mécanique. Ils ont une boîte de vitesses (engrenages) intégrée pour avoir du couple (force) plutôt que de la vitesse pure.
+    
+- **Rappel critique :** Ce sont des moteurs **3V**. Ils doivent être alimentés avec précaution via le PWM du driver.
+    
+![[motor_dfr1224.png]]
+
+## module de communication nRF24l01
+![[image_nrf24.png]]
+
+### Pin configuration nrf
+![[image_pin_configuation_nrf.png]]
+
 
 
 # 2 - Schéma architectural
