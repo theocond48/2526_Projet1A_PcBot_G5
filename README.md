@@ -50,7 +50,7 @@ Le robot doit être capable de:
 ![](image/image_pin_configuration_bms.png)
 
 **Netlist:**
-![](Image/image_pin_configuration_bms.png)
+![](Image/pin_details_bms.png)
 ![](Image/pin_details_bms_2.png)
 
 ## Motor's Driver DRV8411A 
@@ -84,9 +84,9 @@ Le robot doit être capable de:
 ![](image/pin_details_imu.png)
 
 ## Tof vl53lx
+VL53L0X (ToF - Time of Flight)
 
 ![image capteur](image/image_capteur_tof.png)
-VL53L0X (ToF - Time of Flight)
 
 - **C'est quoi ?** Le télémètre laser.
     
