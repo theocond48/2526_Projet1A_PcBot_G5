@@ -50,8 +50,10 @@ Le robot doit être capable de:
 ![](image/image_pin_configuration_bms.png)
 
 **Netlist:**
-![](Image/pin_details_bms.png)
-![](Image/pin_details_bms_2.png)
+
+![](Images/pin_details_bms.png)
+
+![](Images/pin_details_bms_2.png)
 
 ## Motor's Driver DRV8411A 
 
@@ -64,13 +66,13 @@ Le robot doit être capable de:
 - **Pourquoi c'est vital ?** Il protège le STM32 des retours de courant inductif des moteurs.
 ### Pin configuration Driver
 
-![](image/image/image_pin_configuration_drv.png)
+![](Image/image_pin_configuration_drv.png)
 
-![](image/image/pin_details_drv.png)
+![](Image/pin_details_drv.png)
 
 ## imu adafruit (centrale inertielle)
 
-![](image/image_lsm6d0x.png)
+![](Image/image_lsm6d0x.png)
  LSM6DSOX (IMU - Accéléromètre/Gyroscope)
 
 - **C'est quoi ?** Le capteur d'équilibre et de mouvement.
