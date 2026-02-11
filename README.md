@@ -95,7 +95,7 @@ VL53L0X (ToF - Time of Flight)
 - **Sa mission :** Il envoie un rayon de lumière invisible (infrarouge) et mesure le temps qu'il met à revenir. Cela lui donne la distance précise de l'obstacle devant lui (en millimètres).
 
 ### Pin configuration tof
-![pin capteur](images/image_pin_configuration_tof.png)
+![pin capteur](Images/image_pin_configuration_tof.png)
 VL53L0X (ToF - Time of Flight)
 
 - **C'est quoi ?** Le télémètre laser.
