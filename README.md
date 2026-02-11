@@ -66,9 +66,9 @@ Le robot doit être capable de:
 - **Pourquoi c'est vital ?** Il protège le STM32 des retours de courant inductif des moteurs.
 ### Pin configuration Driver
 
-![](Image/image_pin_configuration_drv.png)
+![](Images/image_pin_configuration_drv.png)
 
-![](Image/pin_details_drv.png)
+![](Images/pin_details_drv.png)
 
 ## imu adafruit (centrale inertielle)
 
