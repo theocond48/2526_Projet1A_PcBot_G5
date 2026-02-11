@@ -50,12 +50,12 @@ Le robot doit être capable de:
 ![](image/image_pin_configuration_bms.png)
 
 **Netlist:**
-![](image/image/pin_details_bms.png)
-![](image/image/pin_details_bms_2.png)
+![](Image/image_pin_configuration_bms.png)
+![](Image/pin_details_bms_2.png)
 
 ## Motor's Driver DRV8411A 
 
-![](image/image/image_driver.png)
+![](/image/image_driver.png)
 
 - **C'est quoi ?** L'amplificateur de puissance.
     
