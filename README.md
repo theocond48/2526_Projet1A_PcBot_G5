@@ -31,7 +31,7 @@ Le robot doit être capable de:
 
 ## BMS bq25896
 
-![](image/image_bms.png)
+![](Images/image_bms.png)
 
 - **C'est quoi ?** Le gestionnaire d'énergie intelligent.
     
@@ -57,7 +57,7 @@ Le robot doit être capable de:
 
 ## Motor's Driver DRV8411A 
 
-![](/image/image_driver.png)
+![](Images/image_driver.png)
 
 - **C'est quoi ?** L'amplificateur de puissance.
     
@@ -72,7 +72,7 @@ Le robot doit être capable de:
 
 ## imu adafruit (centrale inertielle)
 
-![](Image/image_lsm6d0x.png)
+![](Images/image_lsm6d0x.png)
  LSM6DSOX (IMU - Accéléromètre/Gyroscope)
 
 - **C'est quoi ?** Le capteur d'équilibre et de mouvement.
@@ -81,21 +81,21 @@ Le robot doit être capable de:
     
 ### Pin configuration imu
 
-![](image/image_pin_configuration_imu.png)
+![](Images/image_pin_configuration_imu.png)
 
-![](image/pin_details_imu.png)
+![](Images/pin_details_imu.png)
 
 ## Tof vl53lx
 VL53L0X (ToF - Time of Flight)
 
-![image capteur](image/image_capteur_tof.png)
+![image capteur](Images/image_capteur_tof.png)
 
 - **C'est quoi ?** Le télémètre laser.
     
 - **Sa mission :** Il envoie un rayon de lumière invisible (infrarouge) et mesure le temps qu'il met à revenir. Cela lui donne la distance précise de l'obstacle devant lui (en millimètres).
 
 ### Pin configuration tof
-![pin capteur](image/image_pin_configuration_tof.png)
+![pin capteur](images/image_pin_configuration_tof.png)
 VL53L0X (ToF - Time of Flight)
 
 - **C'est quoi ?** Le télémètre laser.
@@ -105,7 +105,8 @@ VL53L0X (ToF - Time of Flight)
 
 ## motor DFR1224
 (Moteurs N20 3V)
-![](image/image_nrf24.png)
+
+![](Images/motor_dfr1224.png)
 
 - **C'est quoi ?** Les actionneurs.
     
@@ -119,6 +120,9 @@ VL53L0X (ToF - Time of Flight)
 
 ### Pin configuration nrf
 ![pin nrf](image/image_pin_configuration_nrf.png)
+
+**Netlist**
+![](Images/pin_details_nrf.png)
 
 
 
