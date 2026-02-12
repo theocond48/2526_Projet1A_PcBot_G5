@@ -3,7 +3,7 @@
 **Objectif :** Concevoir un robot communicant (Swarm) pour la cartographie d'environnement.
 **Volume horaire :** 40 heures (10 séances x 4h).
 
-- Travail en groupe réalisé par: Youssef Chemrakhi, Théodore Condette, Rayan Taoussi, Samy, Maoua.
+- Travail en groupe réalisé par: Youssef Chemrakhi, Théodore Condette, Rayan Taoussi, Samy, Maroua Qidi.
 
 
 # I - Phase 1 : Conception et Saisie de Schéma
