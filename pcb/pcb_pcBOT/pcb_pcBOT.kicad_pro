@@ -336,10 +336,6 @@
       "stm32"
     ],
     [
-      "3d1ade0f-d746-46c2-a55a-4700ffca4a85",
-      "battery"
-    ],
-    [
       "4d72a9a9-d017-47b1-aef2-c48a46b4c1d1",
       "capteur tof"
     ],
@@ -350,10 +346,6 @@
     [
       "9be667e2-7a7b-40ab-9f7b-a44803d38fe0",
       "driver_motor"
-    ],
-    [
-      "60110d75-26de-4429-a65c-ad14c118b3d5",
-      "mortor"
     ]
   ],
   "text_variables": {}
