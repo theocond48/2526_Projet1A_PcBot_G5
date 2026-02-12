@@ -1,6 +1,19 @@
+<<<<<<< HEAD
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "60015a44-85a6-4376-8092-fe893a02c30b")
+	(paper "A4")
+	(lib_symbols)
+=======
 (kicad_sch (version 20230121) (generator eeschema)
 
+<<<<<<< HEAD
   (uuid 4d75de3d-e3d9-462e-837f-5c65c898ab15)
+=======
+  (uuid f7225666-9a37-4b4f-8f51-21c341d179a6)
+>>>>>>> 6b713ce0e17fccd8647e79aa07029b188fa8930e
 
   (paper "A4")
 
@@ -237,6 +250,7 @@
     )
   )
 
+<<<<<<< HEAD
 
   (symbol (lib_id "power:VDD") (at 189.23 83.82 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
@@ -402,4 +416,7 @@
       )
     )
   )
+=======
+>>>>>>> 0d22b62cbe868c83110eae7677c6a7abf9db0372
+>>>>>>> 6b713ce0e17fccd8647e79aa07029b188fa8930e
 )

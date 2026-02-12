@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 (kicad_sch (version 20230121) (generator eeschema)
 
   (uuid 704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6)
@@ -130,4 +131,233 @@
   (sheet_instances
     (path "/" (page "1"))
   )
+=======
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6")
+	(paper "A4")
+	(title_block
+		(title "schematic_PcBot_2026")
+		(rev "1.0")
+	)
+	(lib_symbols)
+	(sheet
+		(at 30.48 148.59)
+		(size 66.04 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4d72a9a9-d017-47b1-aef2-c48a46b4c1d1")
+		(property "Sheetname" "capteur tof"
+			(at 30.48 147.8784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "tof.kicad_sch"
+			(at 30.48 189.8146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcb_pcBOT"
+				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 186.69 33.02)
+		(size 81.28 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9be667e2-7a7b-40ab-9f7b-a44803d38fe0")
+		(property "Sheetname" "driver_motor"
+			(at 186.69 32.3084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "drv.kicad_sch"
+			(at 186.69 74.2446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcb_pcBOT"
+				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 106.68 20.32)
+		(size 64.77 43.18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ccd57063-24ab-4973-bd12-151ee600ad9c")
+		(property "Sheetname" "centrale imu"
+			(at 106.68 19.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "imu.kicad_sch"
+			(at 106.68 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcb_pcBOT"
+				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 102.87 72.39)
+		(size 76.2 73.66)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d5d6119d-1191-46c1-ad63-61bb867f116c")
+		(property "Sheetname" "stm32"
+			(at 102.87 71.6784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "stm32.kicad_sch"
+			(at 102.87 146.6346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcb_pcBOT"
+				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 27.94 25.4)
+		(size 58.42 74.93)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d67675e6-7dac-4bc7-9bdf-0364d005735e")
+		(property "Sheetname" "bms"
+			(at 27.94 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "bms.kicad_sch"
+			(at 27.94 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pcb_pcBOT"
+				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+>>>>>>> 6b713ce0e17fccd8647e79aa07029b188fa8930e
 )
