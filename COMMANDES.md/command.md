@@ -67,4 +67,25 @@ git checkout nom-de-la-branche
 ### Créer une branche
 
 ```bash
+# -b, c'est pour créer la branche puis s'y déplacer directement.
+git checkout -b nom-de-la-nouvelle-branche
+```
 
+
+### Comment faire un merge sur Github
+
+C'est pour travailler proprement en équipe, éviter d'écraser le travail des autres et garder un historique clair.
+
+```bash
+# On se place sur la branche qui doit recevoir les changements :
+git checkout base-branch
+
+# On met à jour cette branche :
+git pull
+
+# On merge la branche de travail :
+git merge compare-branch
+
+# Si tout va bien, on pushe :
+git push
+```
