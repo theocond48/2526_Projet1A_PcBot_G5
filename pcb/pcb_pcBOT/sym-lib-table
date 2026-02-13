@@ -1,4 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "pcbot_lib")(type "KiCad")(uri "${KIPRJMOD}/pcbot_lib.kicad_sym")(options "")(descr ""))
+  (lib (name "LSM6DSM_lib")(type "KiCad")(uri "${KIPRJMOD}/LSM6DSM_lib.kicad_sym")(options "")(descr ""))
 )
