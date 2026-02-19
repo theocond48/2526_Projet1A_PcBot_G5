@@ -10,7 +10,7 @@
 	)
 	(lib_symbols)
 	(sheet
-		(at 30.48 148.59)
+		(at 22.86 133.35)
 		(size 66.04 40.64)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26,7 +26,7 @@
 		)
 		(uuid "4d72a9a9-d017-47b1-aef2-c48a46b4c1d1")
 		(property "Sheetname" "capteur tof"
-			(at 30.48 147.8784 0)
+			(at 22.86 132.6384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35,7 +35,7 @@
 			)
 		)
 		(property "Sheetfile" "tof.kicad_sch"
-			(at 30.48 189.8146 0)
+			(at 22.86 174.5746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52,7 +52,7 @@
 		)
 	)
 	(sheet
-		(at 186.69 33.02)
+		(at 194.31 24.13)
 		(size 81.28 40.64)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -68,7 +68,7 @@
 		)
 		(uuid "9be667e2-7a7b-40ab-9f7b-a44803d38fe0")
 		(property "Sheetname" "driver_motor"
-			(at 186.69 32.3084 0)
+			(at 194.31 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -77,7 +77,7 @@
 			)
 		)
 		(property "Sheetfile" "drv.kicad_sch"
-			(at 186.69 74.2446 0)
+			(at 194.31 65.3546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -94,7 +94,7 @@
 		)
 	)
 	(sheet
-		(at 106.68 20.32)
+		(at 24.13 77.47)
 		(size 64.77 43.18)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -110,7 +110,7 @@
 		)
 		(uuid "ccd57063-24ab-4973-bd12-151ee600ad9c")
 		(property "Sheetname" "centrale imu"
-			(at 106.68 19.6084 0)
+			(at 24.13 76.7584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -119,7 +119,7 @@
 			)
 		)
 		(property "Sheetfile" "imu.kicad_sch"
-			(at 106.68 64.0846 0)
+			(at 24.13 121.2346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -136,8 +136,8 @@
 		)
 	)
 	(sheet
-		(at 123.19 80.01)
-		(size 44.45 45.72)
+		(at 105.41 30.48)
+		(size 71.12 124.46)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -152,7 +152,7 @@
 		)
 		(uuid "d5d6119d-1191-46c1-ad63-61bb867f116c")
 		(property "Sheetname" "stm32"
-			(at 123.19 79.2984 0)
+			(at 105.41 29.7684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -161,12 +161,72 @@
 			)
 		)
 		(property "Sheetfile" "stm32.kicad_sch"
-			(at 123.19 126.3146 0)
+			(at 105.41 155.5246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C_SCL" bidirectional
+			(at 105.41 35.56 180)
+			(uuid "f45c3c79-bf63-4cd2-acab-aa3401b28538")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 105.41 38.1 180)
+			(uuid "64a63322-da56-4167-8fec-e77edfbd6f6b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOT_AIN1" bidirectional
+			(at 176.53 41.91 0)
+			(uuid "bf0636eb-86ae-44c0-a34f-916579dd5793")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOT_AIN2" bidirectional
+			(at 176.53 44.45 0)
+			(uuid "446572bc-d752-4c88-b81d-eb18db7650f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOT_BIN1" bidirectional
+			(at 176.53 50.8 0)
+			(uuid "fee9d4b5-0d9e-438a-839a-92a2f774d130")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOT_BIN2" bidirectional
+			(at 176.53 53.34 0)
+			(uuid "4c6aed1b-cb34-4a4a-9bbb-2c764ccf715c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -178,8 +238,8 @@
 		)
 	)
 	(sheet
-		(at 27.94 25.4)
-		(size 58.42 74.93)
+		(at 22.86 24.13)
+		(size 60.96 40.64)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -194,7 +254,7 @@
 		)
 		(uuid "d67675e6-7dac-4bc7-9bdf-0364d005735e")
 		(property "Sheetname" "bms"
-			(at 27.94 24.6884 0)
+			(at 22.86 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -203,7 +263,7 @@
 			)
 		)
 		(property "Sheetfile" "bms.kicad_sch"
-			(at 27.94 100.9146 0)
+			(at 22.86 65.3546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -212,8 +272,48 @@
 			)
 		)
 		(pin "I2C_SDA" bidirectional
-			(at 86.36 39.37 0)
+			(at 83.82 38.1 0)
 			(uuid "19850876-ca48-421d-8a0a-3e4433f13ba8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_SCL" bidirectional
+			(at 83.82 40.64 0)
+			(uuid "6e4bd9f7-15ae-4548-ab7f-a0d81b51d78b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INT_HOST" output
+			(at 83.82 48.26 0)
+			(uuid "c553c283-75f4-4c6a-b6e6-f1c24319dc8a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OTG_HOST" input
+			(at 83.82 50.8 0)
+			(uuid "11b2e0fd-2c14-4af5-a87e-963b44695665")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{CE}_HOST" input
+			(at 83.82 53.34 0)
+			(uuid "f70d2442-91a0-46df-9576-3063a60b87f3")
 			(effects
 				(font
 					(size 1.27 1.27)
