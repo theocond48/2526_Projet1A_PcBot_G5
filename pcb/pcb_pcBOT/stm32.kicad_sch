@@ -3000,6 +3000,17 @@
 		)
 		(uuid "f2c3cfff-1eeb-4423-81a9-62151a2450a0")
 	)
+	(hierarchical_label "OTG_HOST"
+		(shape input)
+		(at 149.86 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1081dc03-b140-4b17-8998-a199b068f621")
+	)
 	(hierarchical_label "MOT_BIN2"
 		(shape bidirectional)
 		(at 149.86 111.76 0)
@@ -3010,6 +3021,17 @@
 			(justify left)
 		)
 		(uuid "1fb7d0bd-f876-4df4-86ce-a8787c9c8096")
+	)
+	(hierarchical_label "INT_HOST"
+		(shape input)
+		(at 149.86 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a8d8288-c495-4fe1-b423-714183abea4b")
 	)
 	(hierarchical_label "MOT_AIN2"
 		(shape bidirectional)
@@ -3032,6 +3054,17 @@
 			(justify right)
 		)
 		(uuid "68911a8e-6a31-481c-9714-6b1519c6d183")
+	)
+	(hierarchical_label "~{CE}_HOST"
+		(shape input)
+		(at 149.86 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7d995659-bb4b-464d-8058-e80daa92fe60")
 	)
 	(hierarchical_label "MOT_AIN1"
 		(shape bidirectional)
