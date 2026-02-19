@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 (kicad_sch
 	(version 20250114)
 	(generator "eeschema")
@@ -6,19 +5,4 @@
 	(uuid "f4d32b89-e581-4c71-b1ed-c18fa870b273")
 	(paper "A4")
 	(lib_symbols)
-=======
-(kicad_sch (version 20230121) (generator eeschema)
-
-<<<<<<< HEAD
-  (uuid 0ed8ad1f-4629-4e78-afdb-2cf7379c5b0c)
-=======
-  (uuid 9f0184f5-b2ac-4572-a806-c0a17e0d9d76)
->>>>>>> 6b713ce0e17fccd8647e79aa07029b188fa8930e
-
-  (paper "A4")
-
-  (lib_symbols
-  )
-
->>>>>>> 0d22b62cbe868c83110eae7677c6a7abf9db0372
 )
