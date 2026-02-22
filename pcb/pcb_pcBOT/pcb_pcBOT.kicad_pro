@@ -563,14 +563,32 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Référence"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -644,6 +662,10 @@
     [
       "9be667e2-7a7b-40ab-9f7b-a44803d38fe0",
       "driver_motor"
+    ],
+    [
+      "0d7586ce-8e7a-4420-8501-a5c84d80a6b0",
+      "nrf24l01"
     ]
   ],
   "text_variables": {}

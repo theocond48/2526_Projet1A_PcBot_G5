@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "2fd91a2b-5865-4ecc-b351-728089a193d5")
 	(paper "A4")
+	(title_block
+		(title "Driver PcBot")
+		(rev "1.0")
+		(company "ENSEA G5")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
@@ -1565,93 +1570,49 @@
 			)
 		)
 	)
-	(global_label "PWM"
-		(shape input)
-		(at 105.41 105.41 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7f7c44e2-9a45-403e-a7be-f0417d5989d5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 98.252 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PWM"
-		(shape input)
-		(at 105.41 107.95 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "daec35c5-b048-4e56-9dd0-2b00677c32d8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 98.252 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PWM"
+	(hierarchical_label "MOT_BIN2"
 		(shape input)
 		(at 105.41 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "e44a9d3c-2719-48c5-a2ce-79f3ba1c8510")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 98.252 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "08871212-192e-48c0-8aad-2ecd10adf5d9")
 	)
-	(global_label "PWM"
+	(hierarchical_label "MOT_AIN1"
+		(shape input)
+		(at 105.41 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3aff00bc-cf18-42a9-a787-c318f3c897ab")
+	)
+	(hierarchical_label "MOT_AIN2"
+		(shape input)
+		(at 105.41 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4c1e6fb2-26b9-43c5-bd13-1af27ce8571d")
+	)
+	(hierarchical_label "MOT_BIN1"
 		(shape input)
 		(at 105.41 110.49 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "eb75c1c6-890a-45f4-9e96-cb2c33b8c4cd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 98.252 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "55432752-5b7f-4775-ac1e-8515c65634a8")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1663,7 +1624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00b62648-88e5-4f92-9025-9a878f5478a6")
-		(property "Reference" "Cbulk1"
+		(property "Reference" "Cbulk701"
 			(at 177.8 83.8199 0)
 			(effects
 				(font
@@ -1717,7 +1678,7 @@
 		(instances
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "Cbulk1")
+					(reference "Cbulk701")
 					(unit 1)
 				)
 			)
@@ -1854,7 +1815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f0dd30f-adb6-4206-a8a5-3a0a058860db")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR0701"
 			(at 119.38 101.6 0)
 			(effects
 				(font
@@ -1904,7 +1865,7 @@
 		(instances
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "#PWR04")
+					(reference "#PWR0701")
 					(unit 1)
 				)
 			)
@@ -1919,7 +1880,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "462f18c8-6284-4a65-9032-4d70243a5d62")
-		(property "Reference" "R-IPROPI_A1"
+		(property "Reference" "R-IPROPI_A701"
 			(at 198.882 140.97 90)
 			(effects
 				(font
@@ -1976,7 +1937,7 @@
 			)
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "R-IPROPI_A1")
+					(reference "R-IPROPI_A701")
 					(unit 1)
 				)
 			)
@@ -1992,7 +1953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55f481f3-653c-4721-a504-87ea9134e402")
-		(property "Reference" "Moteur2"
+		(property "Reference" "Moteur702"
 			(at 175.26 111.7599 90)
 			(effects
 				(font
@@ -2046,7 +2007,7 @@
 		(instances
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "Moteur2")
+					(reference "Moteur702")
 					(unit 1)
 				)
 			)
@@ -2061,7 +2022,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "56a14987-1c83-4d82-b6c5-dfe78746bd74")
-		(property "Reference" "R-IPROPI_B1"
+		(property "Reference" "R-IPROPI_B701"
 			(at 177.546 140.716 90)
 			(effects
 				(font
@@ -2118,7 +2079,7 @@
 			)
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "R-IPROPI_B1")
+					(reference "R-IPROPI_B701")
 					(unit 1)
 				)
 			)
@@ -2133,7 +2094,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "76c05e86-e2fb-4df4-b046-ef2e95ddc890")
-		(property "Reference" "#PWR0702"
+		(property "Reference" "#PWR0705"
 			(at 168.91 138.43 0)
 			(effects
 				(font
@@ -2188,7 +2149,7 @@
 			)
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "#PWR0702")
+					(reference "#PWR0705")
 					(unit 1)
 				)
 			)
@@ -2203,7 +2164,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "78367790-a54b-4784-8196-9a859ee1435f")
-		(property "Reference" "Rvmcu1"
+		(property "Reference" "Rvmcu701"
 			(at 115.062 124.46 90)
 			(effects
 				(font
@@ -2254,7 +2215,7 @@
 		(instances
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "Rvmcu1")
+					(reference "Rvmcu701")
 					(unit 1)
 				)
 			)
@@ -2270,7 +2231,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90719ad9-264e-45fc-ad6a-1b930ebd23b1")
-		(property "Reference" "#PWR0701"
+		(property "Reference" "#PWR0703"
 			(at 146.05 148.59 0)
 			(effects
 				(font
@@ -2325,7 +2286,7 @@
 			)
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "#PWR0701")
+					(reference "#PWR0703")
 					(unit 1)
 				)
 			)
@@ -2341,7 +2302,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "940651b8-6889-4d68-86e5-805b5d8ed6e7")
-		(property "Reference" "C1"
+		(property "Reference" "C701"
 			(at 165.1 83.8199 0)
 			(effects
 				(font
@@ -2395,7 +2356,7 @@
 		(instances
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "C1")
+					(reference "C701")
 					(unit 1)
 				)
 			)
@@ -2410,7 +2371,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9431aebe-6dab-4e70-bbde-ec3d626616a2")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR0704"
 			(at 161.29 95.25 0)
 			(effects
 				(font
@@ -2459,7 +2420,7 @@
 		(instances
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "#PWR01")
+					(reference "#PWR0704")
 					(unit 1)
 				)
 			)
@@ -2474,7 +2435,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "970c4b39-c632-4bbb-98aa-e9cbbf32a729")
-		(property "Reference" "#PWR0703"
+		(property "Reference" "#PWR0707"
 			(at 181.61 142.24 0)
 			(effects
 				(font
@@ -2529,7 +2490,7 @@
 			)
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "#PWR0703")
+					(reference "#PWR0707")
 					(unit 1)
 				)
 			)
@@ -2545,7 +2506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0d031f4-b10e-4429-8cb9-85e4d265479a")
-		(property "Reference" "Moteur1"
+		(property "Reference" "Moteur701"
 			(at 175.26 99.0599 90)
 			(effects
 				(font
@@ -2599,7 +2560,7 @@
 		(instances
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "Moteur1")
+					(reference "Moteur701")
 					(unit 1)
 				)
 			)
@@ -2614,7 +2575,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d44976f9-e1d5-40b7-98dd-79d6a31f9243")
-		(property "Reference" "#PWR0704"
+		(property "Reference" "#PWR0708"
 			(at 193.04 142.24 0)
 			(effects
 				(font
@@ -2670,7 +2631,7 @@
 			)
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "#PWR0704")
+					(reference "#PWR0708")
 					(unit 1)
 				)
 			)
@@ -2685,7 +2646,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9c5f89d-93bb-4557-9ace-9e9f4a76f514")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR0706"
 			(at 173.99 95.25 0)
 			(effects
 				(font
@@ -2734,7 +2695,7 @@
 		(instances
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "#PWR02")
+					(reference "#PWR0706")
 					(unit 1)
 				)
 			)
@@ -2750,7 +2711,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1610b33-602f-4df8-8f29-b55435505276")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR0702"
 			(at 146.05 80.01 0)
 			(effects
 				(font
@@ -2800,7 +2761,7 @@
 		(instances
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "#PWR03")
+					(reference "#PWR0702")
 					(unit 1)
 				)
 			)
