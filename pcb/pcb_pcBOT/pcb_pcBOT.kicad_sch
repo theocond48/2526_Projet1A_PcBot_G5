@@ -10,6 +10,66 @@
 		(company "ENSEA G5")
 	)
 	(lib_symbols)
+	(text "BRAIN"
+		(exclude_from_sim no)
+		(at 141.478 25.4 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "37c7be06-ac2d-4dc1-af2d-ebc69218e1ec")
+	)
+	(text "EYES"
+		(exclude_from_sim no)
+		(at 227.584 73.406 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "3fcc2d88-0299-46bc-8c97-7b26a789f383")
+	)
+	(text "HEART\n\n"
+		(exclude_from_sim no)
+		(at 52.07 27.178 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "43647286-5ead-49bd-a4cd-d5ba1afb3f19")
+	)
+	(text "VOICE + EARS\n"
+		(exclude_from_sim no)
+		(at 229.108 122.682 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "57a7741b-16c1-499a-a8c5-592069fa2e8a")
+	)
+	(text "INNER EAR\n"
+		(exclude_from_sim no)
+		(at 227.584 22.098 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "6c5054ad-0127-47e8-85b3-dab1145f47d2")
+	)
+	(text "MUSCLES"
+		(exclude_from_sim no)
+		(at 52.578 90.932 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "75a2077d-872f-4074-8911-8483f4a2dd79")
+	)
 	(sheet
 		(at 199.39 124.46)
 		(size 63.5 34.29)
@@ -42,6 +102,66 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "CE_NRF" input
+			(at 199.39 128.27 180)
+			(uuid "867f35d3-ee46-4805-bcb9-5492df981c79")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CSN_NRF" input
+			(at 199.39 130.81 180)
+			(uuid "2e147c77-b8aa-4110-9b05-1b9529307e69")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IRQ_NRF" output
+			(at 199.39 146.05 180)
+			(uuid "2d201666-35a6-4377-b6d6-48f0b2785001")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MISO_NRF" output
+			(at 199.39 148.59 180)
+			(uuid "1c1f2b2e-716c-43dd-af6f-2271b4e0ac71")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOSI_NRF" input
+			(at 199.39 133.35 180)
+			(uuid "07ffc824-2c41-4c2b-ac06-e9ba9e603c1a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCK_NRF" input
+			(at 199.39 135.89 180)
+			(uuid "305bd308-2a9d-4e1b-b8cb-3a1cf9e46d59")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -380,6 +500,66 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "CE_NRF" output
+			(at 177.8 128.27 0)
+			(uuid "ce7b7357-b672-4117-aee0-1db4a4d44a38")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CSN_NRF" output
+			(at 177.8 130.81 0)
+			(uuid "3731aed8-e8fb-441a-8edf-2af06e16fc8a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IRQ_NRF" input
+			(at 177.8 146.05 0)
+			(uuid "c7d79638-607f-43f7-b3b6-a4c27aa3744e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MISO_NRF" input
+			(at 177.8 148.59 0)
+			(uuid "3907df0a-ce32-42f0-992b-63983695029e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOSI_NRF" output
+			(at 177.8 133.35 0)
+			(uuid "81c01c30-c5a2-446a-9b7b-0a30c29ada8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCK_NRF" output
+			(at 177.8 135.89 0)
+			(uuid "cd1f7953-334b-480f-846b-01a9b648742e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

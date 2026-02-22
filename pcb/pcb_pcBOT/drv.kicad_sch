@@ -1881,7 +1881,7 @@
 		(dnp no)
 		(uuid "462f18c8-6284-4a65-9032-4d70243a5d62")
 		(property "Reference" "R-IPROPI_A701"
-			(at 198.882 140.97 90)
+			(at 195.072 132.842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1890,7 +1890,7 @@
 			)
 		)
 		(property "Value" "16.5 kΩ"
-			(at 195.58 127 0)
+			(at 195.326 128.016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2023,7 +2023,7 @@
 		(dnp no)
 		(uuid "56a14987-1c83-4d82-b6c5-dfe78746bd74")
 		(property "Reference" "R-IPROPI_B701"
-			(at 177.546 140.716 90)
+			(at 177.8 143.002 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2165,7 +2165,7 @@
 		(dnp no)
 		(uuid "78367790-a54b-4784-8196-9a859ee1435f")
 		(property "Reference" "Rvmcu701"
-			(at 115.062 124.46 90)
+			(at 107.696 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
