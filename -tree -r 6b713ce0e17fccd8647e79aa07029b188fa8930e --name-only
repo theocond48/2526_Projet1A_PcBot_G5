@@ -1,0 +1,348 @@
+[33mcommit ea0c2ac8457d0098b9868b888c2cb2be2ebcf980[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: f9f0a62 6b713ce
+Author: Rayane <Rayane.Taoussi@ensea.fr>
+Date:   Thu Feb 12 12:03:32 2026 +0100
+
+    pcb
+
+[33mcommit f9f0a622831bccafaa8fcc7781142a41c2da3dc7[m
+Author: Rayane <Rayane.Taoussi@ensea.fr>
+Date:   Thu Feb 12 12:03:06 2026 +0100
+
+    pcb
+
+[33mcommit 6b713ce0e17fccd8647e79aa07029b188fa8930e[m
+Merge: 92eabf7 0d22b62
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Thu Feb 12 11:59:03 2026 +0100
+
+    pcb
+
+[33mcommit 92eabf7d09b18f292143cad71792cec647feffdc[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Thu Feb 12 11:58:24 2026 +0100
+
+    pcb
+
+[33mcommit 0d22b62cbe868c83110eae7677c6a7abf9db0372[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Thu Feb 12 11:57:32 2026 +0100
+
+    avancement sur le schematic bms
+
+[33mcommit e897b9430baf6ede8347b4fde57c09725f544c7d[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Thu Feb 12 10:45:19 2026 +0100
+
+    ajout de la librairie composant
+
+[33mcommit 3014e6ae33830b470b825d79a28d43d5d80d4cbd[m
+Merge: 9027396 b9109f4
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Thu Feb 12 08:55:50 2026 +0100
+
+    Merge branch 'main' of github.com:theocond48/2526_Projet1A_PcBot_G5
+
+[33mcommit 9027396c9168c4f66c5487d764eeb279c9675d3b[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Thu Feb 12 08:55:29 2026 +0100
+
+     creation du fichier pcb et des feuilles kicad
+
+[33mcommit b9109f465c9d6f3a9930a2e7464f4d85e9c90d6e[m
+Author: Maroua Qidi <maroua.qidi@ensea.fr>
+Date:   Thu Feb 12 01:39:40 2026 +0100
+
+    j'ai ajoute la commande pour creer une branche
+
+[33mcommit cb13a2e0d00a1739d6bc3313ebfae9f5666e6c63[m
+Author: Maroua Qidi <maroua.qidi@ensea.fr>
+Date:   Thu Feb 12 01:27:35 2026 +0100
+
+    j'ai ajoute comment on fait un merge sur Github
+
+[33mcommit 494d232061267e992f0559827852b1fc2a4f0ebd[m
+Author: Maroua Qidi <maroua.qidi@ensea.fr>
+Date:   Thu Feb 12 01:11:42 2026 +0100
+
+    j'ai juste modifie mon prenom
+
+[33mcommit b45dc699a832c3ea055cbaf910e48b90d1a9c476[m
+Author: marouaq76 <maroua.qidi@ensea.fr>
+Date:   Thu Feb 12 01:06:04 2026 +0100
+
+    Update README.md
+
+[33mcommit 8e5cc502b8c52f5cef638b7a75c6da7abfc4d5f4[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Wed Feb 11 08:53:11 2026 +0100
+
+    ddd
+
+[33mcommit ec0ff9080ab827edef9c4c8607d1542ce0fb2c62[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Wed Feb 11 08:50:56 2026 +0100
+
+    last fix pls
+
+[33mcommit 96b74350166504f3c584f1be8ac9113cd361c522[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Wed Feb 11 08:41:58 2026 +0100
+
+    oui
+
+[33mcommit b434335cdc72a91560e33df6ecc9a5ece6808c22[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Wed Feb 11 08:39:29 2026 +0100
+
+    rien
+
+[33mcommit b54ddee7998a339bbcda5f9d7dd369ab2d218839[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Wed Feb 11 08:34:44 2026 +0100
+
+    fix
+
+[33mcommit 0628f4a45dd9d530c8f628d4ef2b9bc9d35a1687[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Wed Feb 11 08:28:35 2026 +0100
+
+    fix
+
+[33mcommit ef70c41f6de7db3a4e09256b7e37ccd55a4bd653[m
+Merge: 6cddc08 2ba9b64
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Wed Feb 11 08:25:33 2026 +0100
+
+    Merge branch 'main' of github.com:theocond48/2526_Projet1A_PcBot_Glease enter a commit message to explain why this merge is necessary,
+
+[33mcommit 2ba9b649542382d79e8da80d92f65b65180e7940[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Mon Feb 9 20:06:35 2026 +0100
+
+    fix
+
+[33mcommit 6cddc08b9950d07c1ba92d0e1f2bd8fdfd67b337[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Mon Feb 9 20:01:09 2026 +0100
+
+    fix
+
+[33mcommit 4eea3bbb886665d905d8db626e9d29d943b09065[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Mon Feb 9 19:57:38 2026 +0100
+
+    fix
+
+[33mcommit a7843394f74d1fe3233158bd4a0f2b1a6a1ec950[m
+Merge: f7f0e8f bd7f4e6
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Mon Feb 9 19:55:04 2026 +0100
+
+    Merge branch 'main' of github.com:theocond48/2526_Projet1A_PcBot_G5
+
+[33mcommit f7f0e8f7d21d4481348a125322bd4b9fa2a85d8f[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Mon Feb 9 19:54:51 2026 +0100
+
+     je fix les problèmes d'images
+
+[33mcommit bd7f4e66ae0aad4e38c38586fbf818df41b56166[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Mon Feb 9 19:50:29 2026 +0100
+
+    J'ai ajouté des commandes utiles de git
+
+[33mcommit a682561c0a22e2b68a9f19ea07639c31e6e70210[m
+Merge: 0cac1b1 68c327e
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Mon Feb 9 19:41:28 2026 +0100
+
+    Merge branch 'main' of github.com:theocond48/2526_Projet1A_PcBot_G5
+
+[33mcommit 0cac1b147dc04b28bd4cbc5d1fda5a19e96921a1[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Mon Feb 9 19:40:58 2026 +0100
+
+    correction probleme read.me
+
+[33mcommit 68c327eeaa23ba2b04a6f46dfd68a2003d5556db[m
+Merge: 34478cf c7970b7
+Author: YoussefChemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Mon Feb 9 19:36:38 2026 +0100
+
+    Merge pull request #1 from theocond48/memo-git
+    
+    J'ai ajt une branche
+
+[33mcommit 34478cfed64ef38b2303512b938e48bf564a15c5[m
+Merge: 2e3ab90 e7d3b09
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Mon Feb 9 19:25:48 2026 +0100
+
+    Merge branch 'main' of github.com:theocond48/2526_Projet1A_PcBot_G5
+
+[33mcommit 2e3ab903d5ffa4ef6ab747bbc7aacdc61aee9038[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Mon Feb 9 19:24:03 2026 +0100
+
+    ok
+
+[33mcommit c7970b7748d498fc25f5191f7fbcde8df5558e88[m[33m ([m[1;31morigin/memo-git[m[33m, [m[1;32mmemo-git[m[33m)[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Mon Feb 9 19:20:08 2026 +0100
+
+    J'ai ajt une branche
+
+[33mcommit e7d3b09db452dbfe5ca4e5fa1dd9694d47386945[m[33m ([m[1;31morigin/Commandes-git[m[33m)[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Mon Feb 9 19:09:06 2026 +0100
+
+    J'ai enlevé les rappels git
+
+[33mcommit 1de97b266cdeb8620a1f85a6aeddfc54a1aba3d3[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Mon Feb 9 18:50:00 2026 +0100
+
+    Modifs de nouveau
+
+[33mcommit b070006f6804770d148ccdddd9fdb29e376a440e[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Mon Feb 9 18:47:43 2026 +0100
+
+    J'ai ajouté la Datasheet I2C,SPI
+
+[33mcommit 1e538ee980ed878595e47e04b9b2ff3eae2460eb[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Mon Feb 9 17:59:16 2026 +0100
+
+    Modifs
+
+[33mcommit 18a31c7cadd8f516fb39e8d6bb2806b2f7535c9a[m
+Merge: 6b224f5 0df10a4
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Mon Feb 9 17:29:02 2026 +0100
+
+    Merge branch 'main' of github.com:theocond48/2526_Projet1A_PcBot_G5
+
+[33mcommit 6b224f5493494d2a2c02b4dde18d473613484a2b[m
+Merge: 064a8bb 523dd8e
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Mon Feb 9 17:20:43 2026 +0100
+
+    merge
+
+[33mcommit 0df10a4581a9fd68de310412b72dda150ff10c5e[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Sun Feb 8 21:16:19 2026 +0100
+
+    Modifs
+
+[33mcommit ab175be7d619010847246f0d5db2424dd226a83e[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Sun Feb 8 21:14:27 2026 +0100
+
+    Modifs de READme
+
+[33mcommit 8acae92ce8cb73047c52017b9a62f51d6738bf99[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Sun Feb 8 20:58:42 2026 +0100
+
+    Modifs
+
+[33mcommit d4cb201133bfa8f1acd7151717b45d9bf3e4cf5c[m
+Merge: 5b5746a f08f6da
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Sun Feb 8 20:57:03 2026 +0100
+
+    Merge branch 'main' of github.com:theocond48/2526_Projet1A_PcBot_G5
+
+[33mcommit 5b5746aff21369d5c55fb64854f569df0ec7963d[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Sun Feb 8 20:54:37 2026 +0100
+
+    J'ai modifié le fichier READme et j'ai ajouté l'ensemble des documentations sur le fichier Documentation
+
+[33mcommit f08f6da98084ac0aabba5100ada846c68213b654[m
+Author: Maroua Qidi <maroua.qidi@ensea.fr>
+Date:   Thu Feb 5 11:59:03 2026 +0100
+
+    j'ai ajoute les datasheets
+
+[33mcommit 064a8bb7ab3771121afd36352debffff641e416d[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Thu Feb 5 11:51:10 2026 +0100
+
+    plus de doc
+
+[33mcommit 523dd8eef24d05a7df9b8d782cc8eb1b87958fa8[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Thu Feb 5 11:50:43 2026 +0100
+
+    j'ai modifié tout
+
+[33mcommit d3828a8b70cfdd01e69ed6f3eac239301484b4b0[m
+Author: Samylaou <samy.laouamri@gmail.com>
+Date:   Thu Feb 5 11:49:02 2026 +0100
+
+    J'ai modifié le fichier Readme
+
+[33mcommit 555bb067f357882fb4288516b79b312fdac21c76[m
+Author: Théodore Condette <theodore.condette@ensea.fr>
+Date:   Thu Feb 5 11:40:02 2026 +0100
+
+    j'ai clean le ficher
+
+[33mcommit 8d2806e673dc58edb1928a61a37ddf9dc1810b32[m
+Author: Maroua Qidi <maroua.qidi@ensea.fr>
+Date:   Thu Feb 5 11:34:24 2026 +0100
+
+    fiche technique du BMS
+
+[33mcommit e2f93303eeb1f06c2a4196670283b02d84408e10[m
+Author: Maroua Qidi <maroua.qidi@ensea.fr>
+Date:   Thu Feb 5 11:28:51 2026 +0100
+
+    j'ai modifie mon fichier tests
+
+[33mcommit 29a7f5687e7779d1a865f343a9379cd124779e02[m
+Author: Rayane <Rayane.Taoussi@ensea.fr>
+Date:   Thu Feb 5 10:11:54 2026 +0100
+
+    j'ai ajouté un fichier test md
+
+[33mcommit 9b4226858b828cd64912eb8ddd835ef625596f11[m
+Author: RayaneTA <rayane@taoussi.fr>
+Date:   Thu Feb 5 11:09:36 2026 +0100
+
+    Create tests
+
+[33mcommit 04deb640c6b07479a39eda0e489708c0f448ba40[m
+Author: Rayane <Rayane.Taoussi@ensea.fr>
+Date:   Thu Feb 5 10:08:44 2026 +0100
+
+    j'ai enlevé les modifications
+
+[33mcommit cb389aab3d739251b58dee98b4cd846741aa5035[m
+Author: Rayane <Rayane.Taoussi@ensea.fr>
+Date:   Thu Feb 5 10:07:20 2026 +0100
+
+    modifications test
+
+[33mcommit c2a4ca280888e4a5d23ef1e82c38e5b555daf671[m
+Author: Rayane <Rayane.Taoussi@ensea.fr>
+Date:   Thu Feb 5 10:04:52 2026 +0100
+
+    h
+
+[33mcommit 066da00eaa436c4d352877094391407ac915fc31[m
+Author: Youssef Chemrakhi <youssef.chemrakhi@ensea.fr>
+Date:   Thu Feb 5 09:36:14 2026 +0100
+
+    Updated README.md
+
+[33mcommit d44f0d865c225ed07fae0569a346613e358d64e9[m
+Author: theocond48 <theodorecondette@gmail.com>
+Date:   Thu Feb 5 08:56:23 2026 +0100
+
+    Initial commit
