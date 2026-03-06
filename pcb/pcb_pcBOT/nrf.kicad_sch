@@ -692,9 +692,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "module de communication \n"
+	(text "communication module\n"
 		(exclude_from_sim no)
-		(at 146.812 103.378 0)
+		(at 145.034 103.378 0)
 		(effects
 			(font
 				(size 1.27 1.27)

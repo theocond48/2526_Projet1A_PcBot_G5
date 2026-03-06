@@ -3225,6 +3225,17 @@
 		)
 		(uuid "7d9ee8ed-29d7-4d00-8203-614f53ad6300")
 	)
+	(hierarchical_label "TOF_INT"
+		(shape input)
+		(at 124.46 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "904f220a-4364-45b7-abd3-8d969b893a6e")
+	)
 	(hierarchical_label "MOSI_NRF"
 		(shape output)
 		(at 149.86 99.06 0)

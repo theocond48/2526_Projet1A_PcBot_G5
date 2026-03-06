@@ -70,6 +70,66 @@
 		)
 		(uuid "75a2077d-872f-4074-8911-8483f4a2dd79")
 	)
+	(wire
+		(pts
+			(xy 177.8 91.44) (xy 199.39 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "082826c3-a870-4b76-a1ae-df780aa1ff3f")
+	)
+	(wire
+		(pts
+			(xy 177.8 46.99) (xy 199.39 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0973cc0a-e5a1-4b53-ab35-bf8274b8481d")
+	)
+	(wire
+		(pts
+			(xy 77.47 57.15) (xy 106.68 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b5ac8eb-3e5e-472b-b8b4-1662e735508c")
+	)
+	(wire
+		(pts
+			(xy 177.8 146.05) (xy 199.39 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4247ddd5-0934-49a9-8426-c37442b1a6da")
+	)
+	(wire
+		(pts
+			(xy 77.47 52.07) (xy 106.68 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53495ce0-187a-4724-a242-f7487e62def6")
+	)
+	(wire
+		(pts
+			(xy 77.47 54.61) (xy 106.68 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7799b731-2cfa-4f3a-ad6e-046cf5ff86dc")
+	)
 	(sheet
 		(at 199.39 124.46)
 		(size 63.5 34.29)
@@ -135,7 +195,7 @@
 			)
 		)
 		(pin "MISO_NRF" output
-			(at 199.39 148.59 180)
+			(at 199.39 138.43 180)
 			(uuid "1c1f2b2e-716c-43dd-af6f-2271b4e0ac71")
 			(effects
 				(font
@@ -204,6 +264,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "TOF_INT" output
+			(at 199.39 91.44 180)
+			(uuid "255575ce-814b-483c-8ccd-9b320642114f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SCL" bidirectional
+			(at 199.39 81.28 180)
+			(uuid "284de393-997b-4b4f-9ce3-f68f9f36b0fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 199.39 83.82 180)
+			(uuid "c66ece93-abf7-410b-afcf-d4f2677a1bb3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -533,7 +623,7 @@
 			)
 		)
 		(pin "MISO_NRF" input
-			(at 177.8 148.59 0)
+			(at 177.8 138.43 0)
 			(uuid "3907df0a-ce32-42f0-992b-63983695029e")
 			(effects
 				(font
@@ -555,6 +645,16 @@
 		(pin "SCK_NRF" output
 			(at 177.8 135.89 0)
 			(uuid "cd1f7953-334b-480f-846b-01a9b648742e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TOF_INT" input
+			(at 177.8 91.44 0)
+			(uuid "ee17cc8b-5c96-4eec-a5d3-4537cc5c7e77")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -605,7 +705,7 @@
 			)
 		)
 		(pin "I2C_SDA" bidirectional
-			(at 77.47 31.75 0)
+			(at 77.47 35.56 0)
 			(uuid "19850876-ca48-421d-8a0a-3e4433f13ba8")
 			(effects
 				(font
@@ -615,7 +715,7 @@
 			)
 		)
 		(pin "I2C_SCL" bidirectional
-			(at 77.47 34.29 0)
+			(at 77.47 33.02 0)
 			(uuid "6e4bd9f7-15ae-4548-ab7f-a0d81b51d78b")
 			(effects
 				(font

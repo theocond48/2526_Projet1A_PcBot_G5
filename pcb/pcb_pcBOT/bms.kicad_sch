@@ -1991,6 +1991,16 @@
 		)
 		(uuid "4b78dfac-5dc8-4903-af1d-8999d8f6b9a5")
 	)
+	(text "valeur des résistances a verifier avec M.Fiack\n"
+		(exclude_from_sim no)
+		(at 72.136 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8e45c338-82ff-4aca-91e3-e7fb5a3c67ad")
+	)
 	(junction
 		(at 170.18 60.96)
 		(diameter 0)
@@ -3443,7 +3453,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2812eb15-16ec-4a17-bbae-376f725fb81e")
 		(property "Reference" "R201"
 			(at 64.77 100.3299 0)
@@ -3454,8 +3463,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 64.77 102.8699 0)
+		(property "Value" "4.7k"
+			(at 63.754 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3579,7 +3588,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "35746b22-54c3-4211-9f24-fd2cfdf76244")
 		(property "Reference" "R205"
 			(at 80.01 100.3299 0)
@@ -3590,8 +3598,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 80.01 102.8699 0)
+		(property "Value" "4.7k"
+			(at 79.756 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3649,7 +3657,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "38493565-cdae-41de-93d7-9b88a446b30d")
 		(property "Reference" "R203"
 			(at 72.39 100.3299 0)
@@ -3660,8 +3667,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 72.39 102.8699 0)
+		(property "Value" "4.7k"
+			(at 71.628 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
