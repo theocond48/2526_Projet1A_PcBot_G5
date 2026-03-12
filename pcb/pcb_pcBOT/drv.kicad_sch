@@ -286,6 +286,168 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Polarized_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_Small_0_1"
+				(rectangle
+					(start -1.524 0.6858)
+					(end 1.524 0.3048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.524 -0.3048)
+					(end 1.524 -0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1195,6 +1357,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 86.36) (xy 173.99 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34f66789-4787-4f88-84b7-6bb3d213ec6f")
+	)
+	(wire
+		(pts
 			(xy 104.14 127) (xy 119.38 127)
 		)
 		(stroke
@@ -1654,76 +1826,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 173.99 85.09 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00b62648-88e5-4f92-9025-9a878f5478a6")
-		(property "Reference" "Cbulk1"
-			(at 177.8 83.8199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10µF"
-			(at 177.8 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 174.9552 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 173.99 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 173.99 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "49d5f250-4909-45ee-89d6-5540a47fc345")
-		)
-		(pin "1"
-			(uuid "14ad2729-7c3d-4327-b14c-671ddba458a0")
-		)
-		(instances
-			(project ""
-				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "Cbulk1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "pcbot_lib:DRV8411A")
 		(at 144.78 120.65 0)
 		(unit 1)
@@ -1732,7 +1834,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b3866ea-59ea-4ba7-94b2-3d4181269703")
-		(property "Reference" "U701"
+		(property "Reference" "U1"
 			(at 148.082 98.298 0)
 			(effects
 				(font
@@ -1750,7 +1852,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias"
+		(property "Footprint" "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm"
 			(at 117.602 154.686 0)
 			(effects
 				(font
@@ -1854,7 +1956,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f0dd30f-adb6-4206-a8a5-3a0a058860db")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR01"
 			(at 119.38 101.6 0)
 			(effects
 				(font
@@ -1902,6 +2004,12 @@
 			(uuid "2d08bae2-bd0e-4fb1-9505-95ea3c322633")
 		)
 		(instances
+			(project "drv"
+				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
 					(reference "#PWR04")
@@ -1937,12 +2045,13 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 193.04 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
@@ -1970,7 +2079,7 @@
 		(instances
 			(project "drv"
 				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
-					(reference "R-IPROPI_A")
+					(reference "R-IPROPI_A1")
 					(unit 1)
 				)
 			)
@@ -2010,7 +2119,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
 			(at 170.18 113.03 0)
 			(effects
 				(font
@@ -2044,6 +2153,12 @@
 			(uuid "bc7cdc81-4108-48ce-9159-d763860b8a9e")
 		)
 		(instances
+			(project "drv"
+				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
+					(reference "Moteur2")
+					(unit 1)
+				)
+			)
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
 					(reference "Moteur2")
@@ -2079,7 +2194,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 181.61 132.08 0)
 			(effects
 				(font
@@ -2112,7 +2227,7 @@
 		(instances
 			(project "drv"
 				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
-					(reference "R-IPROPI_B")
+					(reference "R-IPROPI_B1")
 					(unit 1)
 				)
 			)
@@ -2133,7 +2248,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "76c05e86-e2fb-4df4-b046-ef2e95ddc890")
-		(property "Reference" "#PWR0702"
+		(property "Reference" "#PWR05"
 			(at 168.91 138.43 0)
 			(effects
 				(font
@@ -2182,7 +2297,7 @@
 		(instances
 			(project "drv"
 				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
-					(reference "#PWR?")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2221,12 +2336,13 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 119.38 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
@@ -2252,6 +2368,12 @@
 			(uuid "a29535f4-1403-475b-99f5-a23909e98db4")
 		)
 		(instances
+			(project "drv"
+				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
+					(reference "Rvmcu1")
+					(unit 1)
+				)
+			)
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
 					(reference "Rvmcu1")
@@ -2270,7 +2392,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90719ad9-264e-45fc-ad6a-1b930ebd23b1")
-		(property "Reference" "#PWR0701"
+		(property "Reference" "#PWR03"
 			(at 146.05 148.59 0)
 			(effects
 				(font
@@ -2319,7 +2441,7 @@
 		(instances
 			(project "drv"
 				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
-					(reference "#PWR?")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -2359,7 +2481,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 160.3248 81.28 0)
 			(effects
 				(font
@@ -2393,6 +2515,12 @@
 			(uuid "aaba9b7d-6b8c-4cda-97f3-067198f9702e")
 		)
 		(instances
+			(project "drv"
+				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
+					(reference "C1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
 					(reference "C1")
@@ -2410,7 +2538,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9431aebe-6dab-4e70-bbde-ec3d626616a2")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR04"
 			(at 161.29 95.25 0)
 			(effects
 				(font
@@ -2457,6 +2585,12 @@
 			(uuid "0cfa4650-bebf-44ac-a85d-0526a15beae3")
 		)
 		(instances
+			(project "drv"
+				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
 					(reference "#PWR01")
@@ -2474,7 +2608,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "970c4b39-c632-4bbb-98aa-e9cbbf32a729")
-		(property "Reference" "#PWR0703"
+		(property "Reference" "#PWR07"
 			(at 181.61 142.24 0)
 			(effects
 				(font
@@ -2523,7 +2657,7 @@
 		(instances
 			(project "drv"
 				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
-					(reference "#PWR?")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -2563,7 +2697,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
 			(at 170.18 100.33 0)
 			(effects
 				(font
@@ -2597,6 +2731,12 @@
 			(uuid "003e6176-3e78-4f5c-9559-6365deed8277")
 		)
 		(instances
+			(project "drv"
+				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
+					(reference "Moteur1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
 					(reference "Moteur1")
@@ -2614,7 +2754,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d44976f9-e1d5-40b7-98dd-79d6a31f9243")
-		(property "Reference" "#PWR0704"
+		(property "Reference" "#PWR08"
 			(at 193.04 142.24 0)
 			(effects
 				(font
@@ -2664,13 +2804,83 @@
 		(instances
 			(project "drv"
 				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
-					(reference "#PWR?")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
 					(reference "#PWR0704")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small")
+		(at 173.99 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4a810c3-e7d3-4a78-9968-3823080e3550")
+		(property "Reference" "C2"
+			(at 176.53 82.0038 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100u"
+			(at 176.53 84.5438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3"
+			(at 173.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small symbol"
+			(at 173.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4dc496d3-3908-4fb0-bfcc-857488438ccc")
+		)
+		(pin "2"
+			(uuid "6e0fd358-91fb-41ac-8cf9-067595ed4ae5")
+		)
+		(instances
+			(project ""
+				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -2685,7 +2895,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9c5f89d-93bb-4557-9ace-9e9f4a76f514")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR06"
 			(at 173.99 95.25 0)
 			(effects
 				(font
@@ -2732,6 +2942,12 @@
 			(uuid "de2ff0ab-7ff1-48e2-ab48-1b58a8c35c2f")
 		)
 		(instances
+			(project "drv"
+				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
 			(project "pcb_pcBOT"
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
 					(reference "#PWR02")
@@ -2750,7 +2966,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1610b33-602f-4df8-8f29-b55435505276")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 146.05 80.01 0)
 			(effects
 				(font
@@ -2798,6 +3014,12 @@
 			(uuid "8aa97ba7-72a1-4317-9215-8bbea23efb4a")
 		)
 		(instances
+			(project "drv"
+				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
 					(reference "#PWR03")
