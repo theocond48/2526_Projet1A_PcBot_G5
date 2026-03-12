@@ -150,6 +150,130 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "LSM6DSM_lib:LSM6DSM"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -736,7 +860,7 @@
 	)
 	(text "Adresse : 0x6A (imposée)"
 		(exclude_from_sim no)
-		(at 133.604 70.612 0)
+		(at 119.38 70.866 0)
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -789,6 +913,16 @@
 			(type default)
 		)
 		(uuid "2c19bf8c-f203-4729-927f-25fa5594b46c")
+	)
+	(wire
+		(pts
+			(xy 137.16 73.66) (xy 139.7 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4535a975-d6b5-4405-ae7f-afb75b93a5fb")
 	)
 	(wire
 		(pts
@@ -932,16 +1066,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 73.66) (xy 139.7 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da17561e-59d9-4bfc-8429-5a308cfa744d")
-	)
-	(wire
-		(pts
 			(xy 139.7 96.52) (xy 151.13 96.52)
 		)
 		(stroke
@@ -959,6 +1083,16 @@
 			(type default)
 		)
 		(uuid "fafcaecc-57b3-4f0f-b37f-660fad7904ab")
+	)
+	(wire
+		(pts
+			(xy 127 73.66) (xy 129.54 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feb290cc-fde0-4a3a-a9ee-3aa8ee525cdc")
 	)
 	(hierarchical_label "I2C_SCL"
 		(shape bidirectional)
@@ -1194,7 +1328,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 73.66 270)
+		(at 127 73.66 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1203,7 +1337,7 @@
 		(fields_autoplaced yes)
 		(uuid "4ab75dee-952a-4738-b7a1-4bdad6d6a159")
 		(property "Reference" "#PWR0607"
-			(at 130.81 73.66 0)
+			(at 120.65 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1212,7 +1346,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 133.35 73.6599 90)
+			(at 123.19 73.6599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1221,7 +1355,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 73.66 0)
+			(at 127 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1230,7 +1364,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 73.66 0)
+			(at 127 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1239,7 +1373,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 73.66 0)
+			(at 127 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1628,6 +1762,74 @@
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/ccd57063-24ab-4973-bd12-151ee600ad9c"
 					(reference "#PWR0608")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 133.35 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7d6d412-aa1a-470c-aed9-d9e4febc5a05")
+		(property "Reference" "R601"
+			(at 133.35 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 133.35 75.438 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 133.35 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8030aa48-f905-4bb2-9838-dda06aad40f4")
+		)
+		(pin "2"
+			(uuid "a7e44954-801b-46e2-851d-bd19619812c7")
+		)
+		(instances
+			(project ""
+				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/ccd57063-24ab-4973-bd12-151ee600ad9c"
+					(reference "R601")
 					(unit 1)
 				)
 			)

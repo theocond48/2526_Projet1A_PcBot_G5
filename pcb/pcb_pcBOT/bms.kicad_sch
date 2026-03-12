@@ -4450,7 +4450,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Texas_S-PWQFN-N24_EP2.7x2.7mm_ThermalVias"
+		(property "Footprint" "Package_DFN_QFN:Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias"
 			(at 116.84 59.69 0)
 			(effects
 				(font
