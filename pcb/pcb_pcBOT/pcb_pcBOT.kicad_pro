@@ -618,6 +618,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
@@ -654,6 +662,10 @@
     [
       "9be667e2-7a7b-40ab-9f7b-a44803d38fe0",
       "driver_motor"
+    ],
+    [
+      "0d7586ce-8e7a-4420-8501-a5c84d80a6b0",
+      "nrf24l01"
     ]
   ],
   "text_variables": {}
