@@ -968,6 +968,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -1175,131 +1300,6 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:VDD"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VDD"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VDD\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VDD_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VDD_1_1"
-				(pin power_in line
-					(at 0 0 90)
 					(length 0)
 					(name "~"
 						(effects
@@ -1816,7 +1816,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" ""
 			(at 174.9552 88.9 0)
 			(effects
 				(font
@@ -1982,6 +1982,9 @@
 	)
 	(symbol
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 267ed55 (Ajout empreintes (incomplet) + test erc correct)
 		(lib_id "power:+3.3V")
 		(at 119.38 97.79 0)
 		(unit 1)
@@ -1991,7 +1994,11 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f0dd30f-adb6-4206-a8a5-3a0a058860db")
+<<<<<<< HEAD
 		(property "Reference" "#PWR01"
+=======
+		(property "Reference" "#PWR0701"
+>>>>>>> parent of 267ed55 (Ajout empreintes (incomplet) + test erc correct)
 			(at 119.38 101.6 0)
 			(effects
 				(font
@@ -2039,6 +2046,7 @@
 			(uuid "2d08bae2-bd0e-4fb1-9505-95ea3c322633")
 		)
 		(instances
+<<<<<<< HEAD
 			(project "drv"
 				(path "/2fd91a2b-5865-4ecc-b351-728089a193d5"
 					(reference "#PWR01")
@@ -2048,14 +2056,22 @@
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
 					(reference "#PWR04")
+=======
+			(project ""
+				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
+					(reference "#PWR0701")
+>>>>>>> parent of 267ed55 (Ajout empreintes (incomplet) + test erc correct)
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
+<<<<<<< HEAD
 =======
 >>>>>>> 267ed5519d67c336b99c9c80b0ac2067182b82a3
+=======
+>>>>>>> parent of 267ed55 (Ajout empreintes (incomplet) + test erc correct)
 		(lib_id "Device:R")
 		(at 193.04 132.08 0)
 		(unit 1)
@@ -2083,16 +2099,19 @@
 			)
 		)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 =======
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 >>>>>>> 267ed5519d67c336b99c9c80b0ac2067182b82a3
+=======
+		(property "Footprint" ""
+>>>>>>> parent of 267ed55 (Ajout empreintes (incomplet) + test erc correct)
 			(at 193.04 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
@@ -2161,10 +2180,14 @@
 			)
 		)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
 =======
 		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 >>>>>>> 267ed5519d67c336b99c9c80b0ac2067182b82a3
+=======
+		(property "Footprint" ""
+>>>>>>> parent of 267ed55 (Ajout empreintes (incomplet) + test erc correct)
 			(at 170.18 113.03 0)
 			(effects
 				(font
@@ -2240,16 +2263,19 @@
 			)
 		)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 =======
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 >>>>>>> 267ed5519d67c336b99c9c80b0ac2067182b82a3
+=======
+		(property "Footprint" ""
+>>>>>>> parent of 267ed55 (Ajout empreintes (incomplet) + test erc correct)
 			(at 181.61 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
@@ -2391,16 +2417,19 @@
 			)
 		)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 =======
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 >>>>>>> 267ed5519d67c336b99c9c80b0ac2067182b82a3
+=======
+		(property "Footprint" ""
+>>>>>>> parent of 267ed55 (Ajout empreintes (incomplet) + test erc correct)
 			(at 119.38 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
@@ -2544,10 +2573,14 @@
 			)
 		)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 =======
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 >>>>>>> 267ed5519d67c336b99c9c80b0ac2067182b82a3
+=======
+		(property "Footprint" ""
+>>>>>>> parent of 267ed55 (Ajout empreintes (incomplet) + test erc correct)
 			(at 160.3248 81.28 0)
 			(effects
 				(font
@@ -2772,10 +2805,14 @@
 			)
 		)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
 =======
 		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 >>>>>>> 267ed5519d67c336b99c9c80b0ac2067182b82a3
+=======
+		(property "Footprint" ""
+>>>>>>> parent of 267ed55 (Ajout empreintes (incomplet) + test erc correct)
 			(at 170.18 100.33 0)
 			(effects
 				(font
@@ -2818,72 +2855,6 @@
 			(project ""
 				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
 					(reference "Moteur701")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 119.38 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8e46e36-4286-4524-b6f8-ae23ff07d532")
-		(property "Reference" "#PWR0701"
-			(at 119.38 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 119.38 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 119.38 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f94391bc-9d2f-443d-a48f-e69782d55930")
-		)
-		(instances
-			(project ""
-				(path "/704e4da3-8ee7-458f-8a0f-3fc97e8dc2a6/9be667e2-7a7b-40ab-9f7b-a44803d38fe0"
-					(reference "#PWR0701")
 					(unit 1)
 				)
 			)
