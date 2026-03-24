@@ -361,15 +361,6 @@
 		(uuid "344fe7d9-50d4-42f5-ac99-4c07bf1a424f")
 	)
 	(bus_entry
-		(at 187.96 128.27)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55dad1b1-15b5-4e02-a219-1138a112005e")
-	)
-	(bus_entry
 		(at 88.9 33.02)
 		(size 2.54 2.54)
 		(stroke
@@ -379,15 +370,6 @@
 		(uuid "59f8cf7b-a8ea-4329-bd84-28e61589f5c6")
 	)
 	(bus_entry
-		(at 187.96 125.73)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69780881-add9-4084-bf16-28613a51635a")
-	)
-	(bus_entry
 		(at 190.5 78.74)
 		(size 2.54 2.54)
 		(stroke
@@ -395,15 +377,6 @@
 			(type default)
 		)
 		(uuid "86593f16-205e-4910-8f61-8e244d30ae60")
-	)
-	(bus_entry
-		(at 187.96 128.27)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "889ef65b-322f-4dba-9d8f-3d4b9fa22dc3")
 	)
 	(bus_entry
 		(at 187.96 130.81)
@@ -422,15 +395,6 @@
 			(type default)
 		)
 		(uuid "c12eb3ef-56d8-4e5e-9c20-887fcf15cd2b")
-	)
-	(bus_entry
-		(at 187.96 125.73)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2fbc496-d2b8-4aaf-b0c7-7830801ba697")
 	)
 	(bus_entry
 		(at 88.9 30.48)
@@ -501,16 +465,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 128.27) (xy 177.8 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ce49726-e54a-4d56-b2b8-d6e10f34cbb1")
-	)
-	(wire
-		(pts
 			(xy 81.28 104.14) (xy 106.68 104.14)
 		)
 		(stroke
@@ -551,7 +505,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 146.05) (xy 199.39 146.05)
+			(xy 177.8 149.86) (xy 199.39 149.86)
 		)
 		(stroke
 			(width 0)
@@ -621,6 +575,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 147.32) (xy 199.39 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62176d07-0c12-46d5-acf6-0e960e7f0908")
+	)
+	(wire
+		(pts
 			(xy 177.8 109.22) (xy 199.39 109.22)
 		)
 		(stroke
@@ -658,16 +622,6 @@
 			(type default)
 		)
 		(uuid "6a25c04e-5592-4189-b02e-8bf733111b1d")
-	)
-	(wire
-		(pts
-			(xy 185.42 130.81) (xy 177.8 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74b3b33d-433b-4731-9402-4f5e10aad21a")
 	)
 	(wire
 		(pts
@@ -741,6 +695,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 144.78) (xy 199.39 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d1a776c-4b19-4922-bc5e-39f15da9ecf7")
+	)
+	(wire
+		(pts
 			(xy 48.26 173.99) (xy 48.26 175.26)
 		)
 		(stroke
@@ -758,16 +722,6 @@
 			(type default)
 		)
 		(uuid "926d4c20-ac9a-4e11-abee-78efeadd5073")
-	)
-	(bus
-		(pts
-			(xy 187.96 125.73) (xy 187.96 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9895ef0c-9b6d-4208-8258-5d9d153c0e86")
 	)
 	(wire
 		(pts
@@ -829,16 +783,6 @@
 		)
 		(uuid "c2f33bc6-3038-4f73-8673-d0af0f4aaaa0")
 	)
-	(wire
-		(pts
-			(xy 190.5 128.27) (xy 199.39 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c663f4a8-63b0-4552-b0d2-02fed6b14229")
-	)
 	(bus
 		(pts
 			(xy 187.96 135.89) (xy 187.96 143.51)
@@ -899,16 +843,6 @@
 		)
 		(uuid "de11036d-dc2e-4ca7-8aeb-b4b31ea3b881")
 	)
-	(bus
-		(pts
-			(xy 187.96 120.65) (xy 187.96 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de955d8b-8317-42a4-ac77-75d9d550c699")
-	)
 	(wire
 		(pts
 			(xy 81.28 110.49) (xy 106.68 110.49)
@@ -931,23 +865,13 @@
 	)
 	(bus
 		(pts
-			(xy 187.96 128.27) (xy 187.96 130.81)
+			(xy 187.96 120.65) (xy 187.96 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e7b61238-9238-4488-a23c-20604720c82b")
-	)
-	(wire
-		(pts
-			(xy 190.5 130.81) (xy 199.39 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9bedf5b-0f50-4e17-9258-387fe7c08540")
 	)
 	(wire
 		(pts
@@ -1018,16 +942,6 @@
 			(type default)
 		)
 		(uuid "fed006fb-c2d2-48b0-92f2-b6b9fa20dd17")
-	)
-	(label "SPI_BUS.CE_NRF"
-		(at 199.39 128.27 180)
-		(effects
-			(font
-				(size 0.5 0.5)
-			)
-			(justify right bottom)
-		)
-		(uuid "0d9b642c-d724-422e-a4f3-f457c297ebd0")
 	)
 	(label "I2C_BUS.I2C_SDA"
 		(at 106.68 35.56 180)
@@ -1129,26 +1043,6 @@
 		)
 		(uuid "86932fac-ac4c-47b2-b6b7-d17a441efb93")
 	)
-	(label "SPI_BUS.CSN_NRF"
-		(at 199.39 130.81 180)
-		(effects
-			(font
-				(size 0.5 0.5)
-			)
-			(justify right bottom)
-		)
-		(uuid "937f713e-8c23-46fe-94f0-b8a8129c570f")
-	)
-	(label "SPI_BUS.CE_NRF"
-		(at 177.8 128.27 0)
-		(effects
-			(font
-				(size 0.5 0.5)
-			)
-			(justify left bottom)
-		)
-		(uuid "a2dcf19e-4895-4358-9b2c-154fa04c8dba")
-	)
 	(label "SPI_BUS.MISO_NRF"
 		(at 199.39 138.43 180)
 		(effects
@@ -1159,17 +1053,7 @@
 		)
 		(uuid "a5e2c67f-c8c5-4f49-a44c-2a7aeb8d8ba8")
 	)
-	(label "SPI_BUS.CSN_NRF"
-		(at 177.8 130.81 0)
-		(effects
-			(font
-				(size 0.5 0.5)
-			)
-			(justify left bottom)
-		)
-		(uuid "ac1c1a0b-2e61-4fbc-858f-bc7d3060c969")
-	)
-	(label "SPI_BUS{CE_NRF CSN_NRF MOSI_NRF SCK_NRF MISO_NRF}"
+	(label "SPI_BUS{MOSI_NRF SCK_NRF MISO_NRF}"
 		(at 187.96 120.65 0)
 		(effects
 			(font
@@ -1596,7 +1480,7 @@
 			)
 		)
 		(pin "CE_NRF" input
-			(at 199.39 128.27 180)
+			(at 199.39 144.78 180)
 			(uuid "867f35d3-ee46-4805-bcb9-5492df981c79")
 			(effects
 				(font
@@ -1606,7 +1490,7 @@
 			)
 		)
 		(pin "CSN_NRF" input
-			(at 199.39 130.81 180)
+			(at 199.39 147.32 180)
 			(uuid "2e147c77-b8aa-4110-9b05-1b9529307e69")
 			(effects
 				(font
@@ -1616,7 +1500,7 @@
 			)
 		)
 		(pin "IRQ_NRF" output
-			(at 199.39 146.05 180)
+			(at 199.39 149.86 180)
 			(uuid "2d201666-35a6-4377-b6d6-48f0b2785001")
 			(effects
 				(font
@@ -2074,7 +1958,7 @@
 			)
 		)
 		(pin "CE_NRF" output
-			(at 177.8 128.27 0)
+			(at 177.8 144.78 0)
 			(uuid "ce7b7357-b672-4117-aee0-1db4a4d44a38")
 			(effects
 				(font
@@ -2084,7 +1968,7 @@
 			)
 		)
 		(pin "CSN_NRF" output
-			(at 177.8 130.81 0)
+			(at 177.8 147.32 0)
 			(uuid "3731aed8-e8fb-441a-8edf-2af06e16fc8a")
 			(effects
 				(font
@@ -2094,7 +1978,7 @@
 			)
 		)
 		(pin "IRQ_NRF" input
-			(at 177.8 146.05 0)
+			(at 177.8 149.86 0)
 			(uuid "c7d79638-607f-43f7-b3b6-a4c27aa3744e")
 			(effects
 				(font
