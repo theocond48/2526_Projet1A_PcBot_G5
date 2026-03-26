@@ -3754,7 +3754,7 @@
 	)
 	(hierarchical_label "I2C_SCL"
 		(shape bidirectional)
-		(at 109.22 95.25 180)
+		(at 109.22 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3765,7 +3765,7 @@
 	)
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
-		(at 109.22 92.71 180)
+		(at 109.22 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)

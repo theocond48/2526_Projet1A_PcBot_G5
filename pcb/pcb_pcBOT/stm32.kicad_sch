@@ -3548,12 +3548,12 @@
 	)
 	(hierarchical_label "INT_BMS"
 		(shape input)
-		(at 149.86 119.38 0)
+		(at 124.46 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "5a8d8288-c495-4fe1-b423-714183abea4b")
 	)
@@ -3658,12 +3658,12 @@
 	)
 	(hierarchical_label "XSHUT3"
 		(shape output)
-		(at 124.46 104.14 180)
+		(at 149.86 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "bb12cf34-0077-475d-9373-4f4c63cbc92a")
 	)
