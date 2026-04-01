@@ -60,27 +60,39 @@ void Error_Handler(void);
 
 /* Private defines -----------------------------------------------------------*/
 #define CE_NRF_Pin GPIO_PIN_0
-#define CE_NRF_GPIO_Port GPIOA
-#define INT_BMS_Pin GPIO_PIN_1
-#define INT_BMS_GPIO_Port GPIOA
-#define OTG_BMS_Pin GPIO_PIN_2
-#define OTG_BMS_GPIO_Port GPIOA
-#define CE_BMS_Pin GPIO_PIN_3
-#define CE_BMS_GPIO_Port GPIOA
-#define IRQ_NRF_Pin GPIO_PIN_4
+#define CE_NRF_GPIO_Port GPIOF
+#define CSN_NRF_Pin GPIO_PIN_1
+#define CSN_NRF_GPIO_Port GPIOF
+#define IRQ_NRF_Pin GPIO_PIN_0
 #define IRQ_NRF_GPIO_Port GPIOA
-#define IMU_INT1_Pin GPIO_PIN_0
-#define IMU_INT1_GPIO_Port GPIOB
-#define MOT_AIN1_Pin GPIO_PIN_8
+#define TOF_INT2_Pin GPIO_PIN_2
+#define TOF_INT2_GPIO_Port GPIOA
+#define XSHUT2_Pin GPIO_PIN_3
+#define XSHUT2_GPIO_Port GPIOA
+#define TOF_INT1_Pin GPIO_PIN_4
+#define TOF_INT1_GPIO_Port GPIOA
+#define XSHUT1_Pin GPIO_PIN_0
+#define XSHUT1_GPIO_Port GPIOB
+#define TOF_INT3_Pin GPIO_PIN_8
+#define TOF_INT3_GPIO_Port GPIOA
+#define MOT_AIN1_Pin GPIO_PIN_9
 #define MOT_AIN1_GPIO_Port GPIOA
-#define MOT_BIN1_Pin GPIO_PIN_9
-#define MOT_BIN1_GPIO_Port GPIOA
-#define MOT_AIN2_Pin GPIO_PIN_11
+#define MOT_AIN2_Pin GPIO_PIN_10
 #define MOT_AIN2_GPIO_Port GPIOA
-#define MOT_BIN2_Pin GPIO_PIN_12
+#define MOT_BIN2_Pin GPIO_PIN_11
 #define MOT_BIN2_GPIO_Port GPIOA
-#define CSN_NRF_Pin GPIO_PIN_3
-#define CSN_NRF_GPIO_Port GPIOB
+#define MOT_BIN1_Pin GPIO_PIN_12
+#define MOT_BIN1_GPIO_Port GPIOA
+#define XSHUT3_Pin GPIO_PIN_15
+#define XSHUT3_GPIO_Port GPIOA
+#define CSN_NRFB3_Pin GPIO_PIN_3
+#define CSN_NRFB3_GPIO_Port GPIOB
+#define OTG_BMS_Pin GPIO_PIN_4
+#define OTG_BMS_GPIO_Port GPIOB
+#define CE_BMS_Pin GPIO_PIN_5
+#define CE_BMS_GPIO_Port GPIOB
+#define INT_BMS_Pin GPIO_PIN_6
+#define INT_BMS_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
