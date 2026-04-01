@@ -3,7 +3,11 @@
 
 
 
-extern float Kp, Ki, Kd;
+#define SET_POINT 80
+#define ROBOT_SPEED 
+
+
+extern float Kp;
 extern float erreur_precedente, integrale;
 extern float setPoint; 
 extern float vRobot ; 
