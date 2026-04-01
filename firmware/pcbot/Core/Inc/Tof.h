@@ -6,6 +6,8 @@
 #define SET_POINT 80
 #define ROBOT_SPEED 
 
+void Tof_Init_All();
+
 
 extern float Kp;
 extern float erreur_precedente, integrale;

@@ -85,8 +85,8 @@ void Error_Handler(void);
 #define MOT_BIN1_GPIO_Port GPIOA
 #define XSHUT3_Pin GPIO_PIN_15
 #define XSHUT3_GPIO_Port GPIOA
-#define CSN_NRFB3_Pin GPIO_PIN_3
-#define CSN_NRFB3_GPIO_Port GPIOB
+#define IMU_INT1_Pin GPIO_PIN_3
+#define IMU_INT1_GPIO_Port GPIOB
 #define OTG_BMS_Pin GPIO_PIN_4
 #define OTG_BMS_GPIO_Port GPIOB
 #define CE_BMS_Pin GPIO_PIN_5

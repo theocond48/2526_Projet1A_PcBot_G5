@@ -97,6 +97,10 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+if (!initVL53L0X(true, &hi2c1)) {
+    // Erreur d'initialisation (problème de câblage ou d'adresse I2C)
+    return 0
+}
 
   /* USER CODE END 2 */
 
@@ -362,7 +366,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOA, XSHUT2_Pin|XSHUT3_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, XSHUT1_Pin|CSN_NRFB3_Pin|OTG_BMS_Pin|CE_BMS_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, XSHUT1_Pin|IMU_INT1_Pin|OTG_BMS_Pin|CE_BMS_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : CE_NRF_Pin CSN_NRF_Pin */
   GPIO_InitStruct.Pin = CE_NRF_Pin|CSN_NRF_Pin;
@@ -398,8 +402,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : XSHUT1_Pin CSN_NRFB3_Pin OTG_BMS_Pin CE_BMS_Pin */
-  GPIO_InitStruct.Pin = XSHUT1_Pin|CSN_NRFB3_Pin|OTG_BMS_Pin|CE_BMS_Pin;
+  /*Configure GPIO pins : XSHUT1_Pin IMU_INT1_Pin OTG_BMS_Pin CE_BMS_Pin */
+  GPIO_InitStruct.Pin = XSHUT1_Pin|IMU_INT1_Pin|OTG_BMS_Pin|CE_BMS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
