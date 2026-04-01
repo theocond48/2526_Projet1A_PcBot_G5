@@ -3,14 +3,23 @@
 #include "VL53L0X.h"
 
 // Constantes du PID (à tuner)
-float Kp = 1.5, Ki = 0.01, Kd = 0.1;
+float Kp = 1.5;
 float erreur_precedente = 0, integrale = 0;
-float setPoint = 80.0; // Consigne à 80mm comme sur le dessin
+float setPoint = SET_POINT; // Consigne
 
 // Paramètres du robot
-float vRobot = 50.0; // Vitesse d'avance constante (ou variable)
+float vRobot = ROBOT_SPEED; // Vitesse
 
-void loop() {
+
+
+
+
+
+
+
+
+
+void Tof_Distance() {
     // 1. Acquisition de la mesure ToF
     uint16_t distance_mesuree = readRangeContinuousMillimeters(0);
     
