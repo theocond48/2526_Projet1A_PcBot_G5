@@ -97,6 +97,10 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+
+  // IMU_Calibration();
+
+
 if (!initVL53L0X(true, &hi2c1)) {
     // Erreur d'initialisation (problème de câblage ou d'adresse I2C)
     return 0
@@ -108,6 +112,14 @@ if (!initVL53L0X(true, &hi2c1)) {
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    //uint32_t tickstart = HAL_GetTick();
+    //IMU_getacceleration + calculer position
+    //Transmettre les données sur nRF24
+    Tof_Distance();
+    Compute_asserv();
+    Motor_apply_speeds(vL, vR);
+
+    //while delay
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

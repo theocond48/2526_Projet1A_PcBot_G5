@@ -17,7 +17,7 @@ float dt = 0.02;
 uint16_t dist_front, dist_left, dist_right;
 void Robot_logic(RobotMode_t *currentMode) {
     // 1. Lecture de la distance (ToF sur I2C2)
-    //read_all_tofs(&dist_front, &dist_left, &dist_right);
+    //Tof_Read(&dist_front, &dist_left, &dist_right);
 
     // Gestion des états
     switch(*currentMode) {
