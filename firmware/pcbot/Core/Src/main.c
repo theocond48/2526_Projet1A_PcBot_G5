@@ -18,7 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include "motors.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -96,6 +96,7 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
+  Motors_Init();
   /* USER CODE BEGIN 2 */
 
   // IMU_Calibration();
@@ -117,7 +118,7 @@ if (!initVL53L0X(true, &hi2c1)) {
     //Transmettre les données sur nRF24
     Tof_Distance();
     Compute_asserv();
-    Motor_apply_speeds(vL, vR);
+    apply_motor_speeds(vL, vR);
 
     //while delay
     /* USER CODE END WHILE */

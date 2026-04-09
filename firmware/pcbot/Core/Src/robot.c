@@ -29,7 +29,7 @@ void Robot_logic(RobotMode_t *currentMode) {
         	}
        // Si un mur s'approche trop par la gauche, on s'écarte à droite sans s'arrêter
         	else if (dist_left < 80) {
-      // moteurs_legere_correction_droite();
+      // moteurs_legere_correction_droite(); asservissement 
         		}
         	else if (dist_right < 80) {
       // moteurs_legere_correction_gauche();
@@ -84,3 +84,6 @@ void Robot_Position() {
 	{
 	}
 }
+
+
+
