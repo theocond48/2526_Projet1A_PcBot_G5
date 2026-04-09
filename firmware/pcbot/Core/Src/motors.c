@@ -142,3 +142,14 @@ void moteurs_legere_correction_droite(void){
 void moteurs_legere_correction_gauche(void){
     apply_motor_speeds(vRobot-CORRECTION,vRobot +CORRECTION )
 }
+
+void moteurs_pivoter_droite(void){
+    apply_motor_speeds(PIVOT, -PIVOT)
+}
+void moteurs_pivoter_gauche(void){
+    apply_motor_speeds(-PIVOT, PIVOT)
+}
+
+void moteurs_stop(void) {
+    set_motors(0, 0);
+} 
