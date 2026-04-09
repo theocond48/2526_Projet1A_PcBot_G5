@@ -2,12 +2,13 @@
  * robot.c
  *
  *  Created on: Mar 26, 2026
- *      Author: ZafkieL
  */
 
 #include "robot.h"
 
 #include "main.h"
+#include "Tof.h"
+#include "motors.h"
 
 float pos_x = 0, pos_y = 0;
 float vit_x = 0, vit_y = 0;
@@ -17,7 +18,7 @@ float dt = 0.02;
 uint16_t dist_front, dist_left, dist_right;
 void Robot_logic(RobotMode_t *currentMode) {
     // 1. Lecture de la distance (ToF sur I2C2)
-    //Tof_Read(&dist_front, &dist_left, &dist_right);
+    Tof_Read(&dist_front, &dist_left, &dist_right);
 
     // Gestion des états
     switch(*currentMode) {
@@ -29,10 +30,10 @@ void Robot_logic(RobotMode_t *currentMode) {
         	}
        // Si un mur s'approche trop par la gauche, on s'écarte à droite sans s'arrêter
         	else if (dist_left < 80) {
-      // moteurs_legere_correction_droite(); asservissement 
+				moteurs_legere_correction_droite(); asservissement 
         		}
         	else if (dist_right < 80) {
-      // moteurs_legere_correction_gauche();
+				 moteurs_legere_correction_gauche();
 				}
         	break;
 
@@ -40,11 +41,11 @@ void Robot_logic(RobotMode_t *currentMode) {
         case MODE_EVITEMENT:
         	// Si on est bloqué devant, on regarde quel côté est le plus libre
         	if (dist_left > dist_right) {
-        		// moteurs_pivoter_gauche();
+				 moteurs_pivoter_gauche();
         		printf("Dodge -> Gauche \r\n");
         	}
         	else {
-        	     // moteurs_pivoter_droite();
+				 moteurs_pivoter_droite();
         		printf("Dodge -> Droite \r\n");
         	}
 
@@ -55,7 +56,7 @@ void Robot_logic(RobotMode_t *currentMode) {
         	break;
 
         case MODE_STOP:
-            // moteurs_stop();
+		moteurs_stop();
             break;
     }
 }

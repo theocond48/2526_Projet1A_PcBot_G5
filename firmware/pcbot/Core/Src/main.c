@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "motors.h"
+#include "robot.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -98,7 +99,7 @@ int main(void)
   MX_TIM2_Init();
   Motors_Init();
   /* USER CODE BEGIN 2 */
-
+  RobotMode_t currentMode = MODE_NAVIGATION;
   // IMU_Calibration();
 
 
@@ -113,13 +114,17 @@ if (!initVL53L0X(true, &hi2c1)) {
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    Robot_logic(&currentMode);
+  
     //uint32_t tickstart = HAL_GetTick();
     //IMU_getacceleration + calculer position
     //Transmettre les données sur nRF24
     Tof_Distance();
-    Compute_asserv();
+    float vL=0.0f , vR= 0.0f;
+    Compute_asserv(dist_front, &vL, &vR);
     apply_motor_speeds(vL, vR);
 
+    HAL_Delay (20);
     //while delay
     /* USER CODE END WHILE */
 

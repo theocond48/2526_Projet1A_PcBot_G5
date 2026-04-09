@@ -50,4 +50,14 @@ void Tof_Distance() {
     return distance_mesuree
 }
 
+void Tof_Read (uint16_t *front, uint16_t *left, uint16_t *right)
+{
+    g_i2cAddr= 0x54;
+    *left = readRangeContinuousMillimeters (NULL);
 
+    g_i2cAddr = 0x56;
+    *front= readRangeContinuousMillimeters(NULL);
+
+    g_i2cAddr= 0x58;
+    *right= readRangeContinuousMillimeters(NULL);
+}

@@ -7,6 +7,7 @@
 #define ROBOT_SPEED 
 
 void Tof_Init_All();
+void Tof_Read(uint16_t *front, uint16_t *left , uint16_t *right);
 
 
 extern float Kp;
