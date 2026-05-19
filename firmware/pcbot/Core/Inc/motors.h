@@ -20,14 +20,14 @@ void set_motors(int32_t speedA, int32_t speedB);
 
 void apply_motor_speeds(float vL, float vR);
 
-void moteurs_legere_correction_droite(void)
+void moteurs_legere_correction_droite(void);
 
-void moteurs_legere_correction_gauche(void)
+void moteurs_legere_correction_gauche(void);
 
-void moteurs_pivoter_droite(void)
+void moteurs_pivoter_droite(void);
 
-void moteurs_pivoter_gauche(void)
+void moteurs_pivoter_gauche(void);
 
-void moteurs_stop(void) 
+void moteurs_stop(void);
 
 #endif

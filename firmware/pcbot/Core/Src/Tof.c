@@ -47,7 +47,7 @@ void Tof_Distance() {
         set_motors(0, 0);
         return;
     }
-    return distance_mesuree
+    return distance_mesuree;
 }
 
 void Tof_Read (uint16_t *front, uint16_t *left, uint16_t *right)

@@ -15,20 +15,20 @@ float vRobot = ROBOT_SPEED; // Vitesse
 
 
 
-void Compute_asserv(distance_mesuree);{
+void Compute_asserv(uint16_t distance_mesuree, float *vL_out, float *vR_out){
     //Calcul du PD (Commande Angulaire)
-    float erreur = (float)setPoint - distance_mesuree;
-    float derivee = erreur - erreur_precedente;
+    erreur = (float)setPoint - (float)distance_mesuree;
+    derivee = erreur - erreur_precedente;
     
     // Résultat du bloc PD du schéma
-    float vAngulaire = (Kp * erreur);
+    vAngulaire = Kp * erreur +Kd * derivee;
     erreur_precedente = erreur;
 
     // Modèle Cinématique (Calcul des vitesses moteurs)
     // Formules du tableau :
     // vL = vRobot + vAngulaire
     // vR = vRobot - vAngulaire
-    float vL = vRobot + vAngulaire;
-    float vR = vRobot - vAngulaire;
+    *vL_out = vRobot + vAngulaire;
+    *vR_out = vRobot - vAngulaire;
 }
 

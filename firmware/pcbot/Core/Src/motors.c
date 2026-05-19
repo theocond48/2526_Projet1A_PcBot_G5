@@ -1,7 +1,7 @@
 #include "motors.h"
 #include "main.h"
 #include "IMU.h"
-#include "AsserAndOther.h"
+#include "AsservAndOther.h"
 
 #define CORRECTION
 #define PIVOT
@@ -38,7 +38,7 @@ void Motors_Init(void)
     HAL_TIM_PWM_Start( &htim2, TIM_CHANNEL_3);
 
     //2.2. Démarrer TIM1 CH3 → AIN2
-    HAL_TIM_PWM_Start( &htim1, TIM_CHANNEL_3)
+    HAL_TIM_PWM_Start( &htim1, TIM_CHANNEL_3);
 
     //2.3. Démarrer TIM1 CH2N → BIN1 
     HAL_TIMEx_PWMN_Start (&htim1, TIM_CHANNEL_2);
@@ -61,8 +61,8 @@ void Motor_A_Set(int32_t speed)
 
     //Zone morte : en dessous de seuil les moteurs ne tournent pas 
 
-    if ( speed > 0 && speed < (int32_t)PWM_DEADBAND) speed 0;
-    if ( speed > 0 && speed > -(int32_t)PWM_DEADBAND) speed 0;
+    if ( speed > 0 && speed < (int32_t)PWM_DEADBAND) speed  0;
+    if ( speed > 0 && speed > -(int32_t)PWM_DEADBAND) speed  0;
 
     if (speed>0)
     {
@@ -86,7 +86,7 @@ void Motor_A_Set(int32_t speed)
 
 // 4. Motot_B_Set (roue droite)
 
-void Motor_B_set(int32_t speed)
+void Motor_B_Set(int32_t speed)
 {
     //Saturation
     if (speed> (int32_t)PWM_MAX) speed= (int32_t)PWM_MAX;
@@ -105,7 +105,7 @@ void Motor_B_set(int32_t speed)
     else if ( speed<0)
     {
         //Arrière
-        _set_BIN1(0u):
+        _set_BIN1(0u);
         _set_BIN2((uint32_t)(-speed));
     }
     else{
@@ -137,17 +137,17 @@ void apply_motor_speeds(float vL, float vR)
     Motor_B_Set (pwmR);
 }
 void moteurs_legere_correction_droite(void){
-    apply_motor_speeds(vRobot+ CORRECTION,vRobot- CORRECTION)
+    apply_motor_speeds(vRobot+ CORRECTION,vRobot- CORRECTION);
 }
 void moteurs_legere_correction_gauche(void){
-    apply_motor_speeds(vRobot-CORRECTION,vRobot +CORRECTION )
+    apply_motor_speeds(vRobot-CORRECTION,vRobot +CORRECTION );
 }
 
 void moteurs_pivoter_droite(void){
-    apply_motor_speeds(PIVOT, -PIVOT)
+    apply_motor_speeds(PIVOT, -PIVOT);
 }
 void moteurs_pivoter_gauche(void){
-    apply_motor_speeds(-PIVOT, PIVOT)
+    apply_motor_speeds(-PIVOT, PIVOT);
 }
 
 void moteurs_stop(void) {
